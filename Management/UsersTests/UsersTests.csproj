@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Bogus" Version="35.6.1" />
+        <PackageReference Include="Cojali.Shared.App" Version="0.15.1" />
+        <PackageReference Include="Cojali.Shared.Domain" Version="0.15.1" />
+        <PackageReference Include="Cojali.Shared.Infrastructure.Bus" Version="0.15.1" />
+        <PackageReference Include="coverlet.collector" Version="6.0.0"/>
+        <PackageReference Include="Dapper" Version="2.1.66" />
+        <PackageReference Include="FluentAssertions" Version="8.0.1" />
+        <PackageReference Include="FluentMigrator" Version="6.2.0" />
+        <PackageReference Include="FluentMigrator.Runner" Version="6.2.0" />
+        <PackageReference Include="MediatR" Version="12.4.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.13" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
+        <PackageReference Include="Moq" Version="4.20.72" />
+        <PackageReference Include="MySqlConnector" Version="2.4.0" />
+        <PackageReference Include="MySqlConnector.DependencyInjection" Version="2.4.0" />
+        <PackageReference Include="Testcontainers.MySql" Version="4.2.0" />
+        <PackageReference Include="TngTech.ArchUnitNET.xUnit" Version="0.11.3" />
+        <PackageReference Include="xunit" Version="2.5.3"/>
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="Xunit"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="UsersManagement\Shared\Bookings\Domain\DomainEvents\" />
+      <Folder Include="UsersManagement\Shared\Bookings\Domain\Exceptions\" />
+      <Folder Include="UsersManagement\Shared\Counters\Domain\Counters\" />
+      <Folder Include="UsersManagement\Shared\Counters\Domain\Exceptions\" />
+      <Folder Include="UsersManagement\Shared\Senders\Domain\Exceptions\" />
+      <Folder Include="UsersManagement\Shared\Users\Exceptions\" />
+      <Folder Include="UsersManagement\Shared\Users\Querys\" />
+      <Folder Include="UsersManagement\Shared\Vehicles\Domain\Exceptions\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\UsersAPI\UsersAPI.csproj" />
+      <ProjectReference Include="..\UsersManagement\UsersManagement.csproj" />
+    </ItemGroup>
+
+</Project>

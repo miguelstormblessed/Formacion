@@ -1,0 +1,18 @@
+Comprobando dependencias para el módulo: Vehicles
+No debería depender de: Users|Senders|Counters
+El módulo 'Vehicles' no tiene violaciones
+
+Comprobando dependencias para el módulo: Users
+No debería depender de: Vehicles|Senders|Counters
+El módulo 'Users' tiene violaciones:
+  - "Types that reside in namespace with full name matching "UsersManagement\.Users(\..+)?" should not depend on Types that reside in namespace with full name matching "UsersManagement\.(Vehicles|Senders|Counters)(\..+)?"" failed:
+  - UsersManagement.Users.Domain.Usuario does depend on UsersManagement.Vehicles.Infrastructure.Mappers.VehicleColorMapper
+
+Comprobando dependencias para el módulo: Senders
+No debería depender de: Vehicles|Users|Counters
+El módulo 'Senders' no tiene violaciones
+
+Comprobando dependencias para el módulo: Counters
+No debería depender de: Vehicles|Users|Senders
+El módulo 'Counters' no tiene violaciones
+

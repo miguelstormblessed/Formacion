@@ -1,0 +1,20 @@
+Comprobando dependencias para el módulo: Vehicles
+No debería depender de: Users|Senders|Counters|Bookings
+El módulo 'Vehicles' no tiene violaciones
+
+Comprobando dependencias para el módulo: Users
+No debería depender de: Vehicles|Senders|Counters|Bookings
+El módulo 'Users' no tiene violaciones
+
+Comprobando dependencias para el módulo: Senders
+No debería depender de: Vehicles|Users|Counters|Bookings
+El módulo 'Senders' no tiene violaciones
+
+Comprobando dependencias para el módulo: Counters
+No debería depender de: Vehicles|Users|Senders|Bookings
+El módulo 'Counters' no tiene violaciones
+
+Comprobando dependencias para el módulo: Bookings
+No debería depender de: Vehicles|Users|Senders|Counters
+El módulo 'Bookings' no tiene violaciones
+
