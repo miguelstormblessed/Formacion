@@ -15,6 +15,28 @@
           }
         }
       },
+      "Cojali.Shared.App/0.15.1": {
+        "type": "package",
+        "dependencies": {
+          "Cojali.Shared.Domain": "0.15.1",
+          "Cojali.Shared.Infrastructure.Bus": "0.15.1",
+          "Cojali.Shared.Infrastructure.Persistence": "0.15.1",
+          "Microsoft.AspNetCore.Mvc.Versioning": "4.1.0",
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "Newtonsoft.Json": "13.0.3",
+          "Swashbuckle.AspNetCore.Swagger": "6.9.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.9.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.9.0",
+          "System.Text.Json": "8.0.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/Cojali.Shared.App.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Cojali.Shared.App.dll": {}
+        }
+      },
       "Cojali.Shared.Domain/0.15.1": {
         "type": "package",
         "compile": {
@@ -22,6 +44,33 @@
         },
         "runtime": {
           "lib/netstandard2.0/Cojali.Shared.Domain.dll": {}
+        }
+      },
+      "Cojali.Shared.Infrastructure.Bus/0.15.1": {
+        "type": "package",
+        "dependencies": {
+          "Cojali.Shared.Domain": "0.15.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
+          "System.Text.Json": "8.0.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/Cojali.Shared.Infrastructure.Bus.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Cojali.Shared.Infrastructure.Bus.dll": {}
+        }
+      },
+      "Cojali.Shared.Infrastructure.Persistence/0.15.1": {
+        "type": "package",
+        "dependencies": {
+          "Cojali.Shared.Domain": "0.15.1",
+          "Westwind.Utilities": "5.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/Cojali.Shared.Infrastructure.Persistence.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Cojali.Shared.Infrastructure.Persistence.dll": {}
         }
       },
       "Dapper/2.1.66": {
@@ -94,6 +143,31 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Mvc.Versioning/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
         "type": "package",
         "compile": {
@@ -129,6 +203,19 @@
           "buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets": {}
         }
       },
+      "Microsoft.IO.RecyclableMemoryStream/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -145,6 +232,19 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.OpenApi/1.6.14": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "MySql.Data/9.2.0": {
@@ -213,6 +313,70 @@
             "related": ".xml"
           }
         }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/6.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.14"
+        },
+        "compile": {
+          "lib/net8.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/6.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "6.9.0"
+        },
+        "compile": {
+          "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/6.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "System.Buffers/4.5.1": {
         "type": "package",
@@ -541,6 +705,22 @@
           }
         }
       },
+      "Westwind.Utilities/5.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "lib/net8.0/Westwind.Utilities.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Westwind.Utilities.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "ZstdSharp.Port/0.8.0": {
         "type": "package",
         "compile": {
@@ -573,6 +753,18 @@
         "packageIcon.png"
       ]
     },
+    "Cojali.Shared.App/0.15.1": {
+      "sha512": "yg2rM4KBqGnKjATAxOfoc3rkEb4lzpuik5MU275zUYlco6KC2LV9ruZXojI4JkAGFbVZq7IdZtuvmZyNG0DVcg==",
+      "type": "package",
+      "path": "cojali.shared.app/0.15.1",
+      "files": [
+        ".nupkg.metadata",
+        "cojali.shared.app.0.15.1.nupkg.sha512",
+        "cojali.shared.app.nuspec",
+        "lib/netstandard2.0/Cojali.Shared.App.dll",
+        "logo-cojali.png"
+      ]
+    },
     "Cojali.Shared.Domain/0.15.1": {
       "sha512": "tohqV6AZ9APDiHWFLux2lI7vrkt+P7PoUZ81Ix3jrbzRSJweexArcw0/DmaB8ZAsTDxzQJ6RN05jPevgK/NRkQ==",
       "type": "package",
@@ -582,6 +774,30 @@
         "cojali.shared.domain.0.15.1.nupkg.sha512",
         "cojali.shared.domain.nuspec",
         "lib/netstandard2.0/Cojali.Shared.Domain.dll",
+        "logo-cojali.png"
+      ]
+    },
+    "Cojali.Shared.Infrastructure.Bus/0.15.1": {
+      "sha512": "99ipaiA9rsQKBI4Ht9yMGe4K7VJ/AQsb2E+sgoJhiEAFuVQXYfUq1yJblHUlSywSGW7ImrqQHbzpJNnZZzGtEA==",
+      "type": "package",
+      "path": "cojali.shared.infrastructure.bus/0.15.1",
+      "files": [
+        ".nupkg.metadata",
+        "cojali.shared.infrastructure.bus.0.15.1.nupkg.sha512",
+        "cojali.shared.infrastructure.bus.nuspec",
+        "lib/netstandard2.0/Cojali.Shared.Infrastructure.Bus.dll",
+        "logo-cojali.png"
+      ]
+    },
+    "Cojali.Shared.Infrastructure.Persistence/0.15.1": {
+      "sha512": "zyVi0UHyVLJSdbB9ekv38xBW63bVOkYf4+qwCGDacUwr66exrf9XdguVR/TXdY2u0jDhIYs5XHLKnanOhAW+OQ==",
+      "type": "package",
+      "path": "cojali.shared.infrastructure.persistence/0.15.1",
+      "files": [
+        ".nupkg.metadata",
+        "cojali.shared.infrastructure.persistence.0.15.1.nupkg.sha512",
+        "cojali.shared.infrastructure.persistence.nuspec",
+        "lib/netstandard2.0/Cojali.Shared.Infrastructure.Persistence.dll",
         "logo-cojali.png"
       ]
     },
@@ -690,6 +906,94 @@
         "lib/netstandard2.1/K4os.Hash.xxHash.xml"
       ]
     },
+    "Microsoft.AspNetCore.Mvc.Versioning/4.1.0": {
+      "sha512": "QuFIocMUP8K9+QrjLNio6uD3CE805afEJNz9qaEPl0ah2D2iQrmEW3bD5+LfathtdVS4MkmmgEVrhJBP1yFOFA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.versioning/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.pdb",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.pdb",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.xml",
+        "microsoft.aspnetcore.mvc.versioning.4.1.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.versioning.nuspec"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
       "sha512": "3iE7UF7MQkCv1cxzCahz+Y/guQbTqieyxyaWKhrRO91itI9cOKO76OHeQDahqG4MmW5umr3CcCvGmK92lWNlbg==",
       "type": "package",
@@ -795,6 +1099,24 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.IO.RecyclableMemoryStream/3.0.1": {
+      "sha512": "s/s20YTVY9r9TPfTrN5g8zPF1YhwxyqO6PxUkrYTGI2B+OGPe9AdajWZrLhFqXIvqIW23fnUE4+ztrUWNU1+9g==",
+      "type": "package",
+      "path": "microsoft.io.recyclablememorystream/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.xml",
+        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.xml",
+        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.xml",
+        "microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512",
+        "microsoft.io.recyclablememorystream.nuspec"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -823,6 +1145,21 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "Microsoft.OpenApi/1.6.14": {
+      "sha512": "tTaBT8qjk3xINfESyOPE2rIellPvB7qpVqiWiyA/lACVvz+xOGiXhFUfohcx82NLbi5avzLW0lx+s6oAqQijfw==",
+      "type": "package",
+      "path": "microsoft.openapi/1.6.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.6.14.nupkg.sha512",
+        "microsoft.openapi.nuspec"
       ]
     },
     "MySql.Data/9.2.0": {
@@ -884,6 +1221,126 @@
         "logo.png",
         "mysqlconnector.2.4.0.nupkg.sha512",
         "mysqlconnector.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Swagger/6.9.0": {
+      "sha512": "P316kpxx5DnDvJwNWW8iTAXkh9DVenAxFGe9v4OUS0gil+vitH7F1feXhCtVeHN/616EFNTMh4pV2lcr9kkw/w==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swagger/6.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/net6.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/net7.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/net8.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net8.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/net8.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
+        "package-readme.md",
+        "swashbuckle.aspnetcore.swagger.6.9.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/6.9.0": {
+      "sha512": "FjeMR3fBzwVc5plfYjoHw9ptf8SOWMupvO9X35J5EgzT3L9dRqSxa+cBKzL8PwCyemY0xNrggQSB5+MFWx1axg==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggergen/6.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "package-readme.md",
+        "swashbuckle.aspnetcore.swaggergen.6.9.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/6.9.0": {
+      "sha512": "0OxlWBFLl2gUESZX/K7QCTz9KctKy0VxHTvLIBcyWGD4z/fv5MCMW02qzYGcReLJr4yBnNDRzApKtLh6oBpe9A==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggerui/6.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "package-readme.md",
+        "swashbuckle.aspnetcore.swaggerui.6.9.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -1821,6 +2278,29 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Westwind.Utilities/5.0.11": {
+      "sha512": "+GL3J1au7e2ZrQ81Tb4jzVLBWR/FX07Rzqru3NwgKt+Ra59VjGB+KtRCwR6xPCLUeoJao5WB/dZFA4errhYBCA==",
+      "type": "package",
+      "path": "westwind.utilities/5.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.MD",
+        "icon.png",
+        "lib/net462/Westwind.Utilities.dll",
+        "lib/net462/Westwind.Utilities.xml",
+        "lib/net6.0/Westwind.Utilities.dll",
+        "lib/net6.0/Westwind.Utilities.xml",
+        "lib/net8.0/Westwind.Utilities.dll",
+        "lib/net8.0/Westwind.Utilities.xml",
+        "lib/net9.0/Westwind.Utilities.dll",
+        "lib/net9.0/Westwind.Utilities.xml",
+        "lib/netstandard2.0/Westwind.Utilities.dll",
+        "lib/netstandard2.0/Westwind.Utilities.xml",
+        "westwind.utilities.5.0.11.nupkg.sha512",
+        "westwind.utilities.nuspec"
+      ]
+    },
     "ZstdSharp.Port/0.8.0": {
       "sha512": "Z62eNBIu8E8YtbqlMy57tK3dV1+m2b9NhPeaYovB5exmLKvrGCqOhJTzrEUH5VyUWU6vwX3c1XHJGhW5HVs8dA==",
       "type": "package",
@@ -1843,7 +2323,9 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Cojali.Shared.App >= 0.15.1",
       "Cojali.Shared.Domain >= 0.15.1",
+      "Cojali.Shared.Infrastructure.Bus >= 0.15.1",
       "Dapper >= 2.1.66",
       "MySql.Data >= 9.2.0",
       "MySqlConnector >= 2.4.0"
@@ -1900,7 +2382,15 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Cojali.Shared.App": {
+            "target": "Package",
+            "version": "[0.15.1, )"
+          },
           "Cojali.Shared.Domain": {
+            "target": "Package",
+            "version": "[0.15.1, )"
+          },
+          "Cojali.Shared.Infrastructure.Bus": {
             "target": "Package",
             "version": "[0.15.1, )"
           },

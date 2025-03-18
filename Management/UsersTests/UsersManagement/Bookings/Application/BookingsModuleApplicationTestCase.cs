@@ -5,13 +5,12 @@ using Moq;
 using UsersManagement.Bookings.Domain;
 using UsersManagement.Bookings.Domain.Specification;
 using UsersManagement.Bookings.Domain.ValueObject;
+using UsersManagement.Shared.HttpClient;
 using UsersManagement.Shared.Users.Domain.Commands;
 using UsersManagement.Shared.Users.Domain.Querys;
 using UsersManagement.Shared.Users.Domain.Responses;
 using UsersManagement.Shared.Vehicles.Domain.Querys;
 using UsersManagement.Shared.Vehicles.Domain.Responses;
-using UsersManagement.Users.Domain;
-using UsersManagement.Users.Domain.ValueObject;
 
 namespace UsersTests.UsersManagement.Bookings.Application;
 
@@ -22,16 +21,18 @@ public class BookingsModuleApplicationTestCase
         EventBus = new Mock<IEventBus>();
         CommandBus = new Mock<ICommandBus>();
         BookingRepository = new Mock<IBookingRepository>();
-        UserRepository = new Mock<IUserRepository>();
+        HttpClientService = new Mock<IHttpClientService>();
+        //UserRepository = new Mock<IUserRepository>();
     }
 
     protected Mock<IQueryBus> QueryBus { get; set; }
     protected Mock<IEventBus> EventBus{ get; set; }
     protected Mock<ICommandBus> CommandBus{ get; set; }
     protected Mock<IBookingRepository> BookingRepository { get; set; }
-    protected Mock<IUserRepository> UserRepository { get; set; }
+    protected Mock<IHttpClientService> HttpClientService { get; set; }
+    //protected Mock<IUserRepository> UserRepository { get; set; }
 
-    protected void ShouldReturnVehicleResponseThenUserResponse(VehicleFinderQuery vehicleFinderQuery, VehicleResponse vehicleResponse, UserFinderQuery userFinderQuery, UserResponse userResponse)
+    /*protected void ShouldReturnVehicleResponseThenUserResponse(VehicleFinderQuery vehicleFinderQuery, VehicleResponse vehicleResponse, UserFinderQuery userFinderQuery, UserResponse userResponse)
     {
         var sequence = new MockSequence();
         this.QueryBus
@@ -40,16 +41,26 @@ public class BookingsModuleApplicationTestCase
         this.QueryBus
             .InSequence(sequence)
             .Setup(q => q.AskAsync(userFinderQuery)).ReturnsAsync(userResponse);
-    }
+    }*/
 
-    protected void ShouldFindUser(UserId id, Usuario user)
+    /*protected void ShouldFindUser(UserId id, Usuario user)
     {
         this.UserRepository.Setup(r => r.Find(id)).Returns(user);
-    }
+    }*/
 
     protected void ShouldFindBooking(BookingId bookingId, Booking booking)
     {
         this.BookingRepository.Setup(b => b.GetBookingById(bookingId)).Returns(booking);
+    }
+
+    protected async Task ShouldFindUserByHttp(HttpResponseMessage response)
+    {
+        HttpClientService.Setup(h => h.GetAsync(It.IsAny<string>())).ReturnsAsync(response);
+    }
+
+    protected void ShouldFindVehicle(VehicleFinderQuery query, VehicleResponse response)
+    {
+        this.QueryBus.Setup(q => q.AskAsync(query)).ReturnsAsync(response);
     }
     
     protected void SholdHaveCalledAskAsyncWithCorrectVehicleFinderQueryParametersOnce(VehicleFinderQuery query)

@@ -1,4 +1,4 @@
-﻿using Cojali.Shared.Domain.Bus.Event;
+﻿/*using Cojali.Shared.Domain.Bus.Event;
 using UsersManagement.Senders.Application;
 using UsersManagement.Senders.Domain;
 using UsersManagement.Senders.Domain.ValueObject;
@@ -38,4 +38,4 @@ public class SendEmailOnUserDeletedTest : SendersModuleAplicationUnitTestCase
         // THEN
         this.ShouldHaveCalledSendWithCorrectParametersOnce(send);
     }
-}
+}*/

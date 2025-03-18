@@ -1,7 +1,7 @@
 using Cojali.Shared.Domain.Bus.Event;
 using Cojali.Shared.Domain.Bus.Query;
-using UsersManagement.Shared.Vehicles.Domain.Querys;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
+using Users.Shared.Vehicles.Domain.Querys;
+using Users.Shared.Vehicles.Domain.Responses;
 using UsersManagement.Users.Application.Find;
 using UsersManagement.Users.Domain;
 using UsersManagement.Users.Domain.ValueObject;

@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace UsersManagement.Shared.Vehicles.Domain.Responses;
+namespace Users.Shared.Vehicles.Domain.Responses;
 
 public class VehicleResponse
 {

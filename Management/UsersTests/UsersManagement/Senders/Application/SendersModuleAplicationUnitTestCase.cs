@@ -1,4 +1,4 @@
-﻿using Cojali.Shared.Domain.Bus.Event;
+﻿/*using Cojali.Shared.Domain.Bus.Event;
 using MediatR;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Moq;
@@ -40,4 +40,4 @@ public class SendersModuleAplicationUnitTestCase
     {
         this.SendRepository.Setup(x => x.Send(send));
     }
-}
+}*/

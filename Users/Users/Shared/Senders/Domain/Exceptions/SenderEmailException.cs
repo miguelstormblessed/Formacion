@@ -1,4 +1,4 @@
-﻿namespace UsersManagement.Shared.Senders.Domain.Exceptions;
+﻿namespace Users.Shared.Senders.Domain.Exceptions;
 
 public class SenderEmailException : Exception
 {

@@ -1,4 +1,4 @@
-﻿namespace UsersManagement.Shared.Vehicles.Domain.Exceptions;
+﻿namespace Users.Shared.Vehicles.Domain.Exceptions;
 
 public class InvalidVehicleRegistrationNumberException : Exception
 {

@@ -51,7 +51,15 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Cojali.Shared.App": {
+              "target": "Package",
+              "version": "[0.15.1, )"
+            },
             "Cojali.Shared.Domain": {
+              "target": "Package",
+              "version": "[0.15.1, )"
+            },
+            "Cojali.Shared.Infrastructure.Bus": {
               "target": "Package",
               "version": "[0.15.1, )"
             },

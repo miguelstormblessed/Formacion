@@ -1,5 +1,5 @@
 ﻿using Cojali.Shared.Domain.Bus.Event;
-using UsersManagement.Shared.Users.Domain.Exceptions;
+using Users.Shared.Users.Domain.Exceptions;
 using UsersManagement.Users.Application.Find;
 using UsersManagement.Users.Domain;
 using UsersManagement.Users.Domain.ValueObject;

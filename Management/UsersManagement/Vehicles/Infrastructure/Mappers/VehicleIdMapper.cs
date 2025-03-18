@@ -1,6 +1,5 @@
 ﻿using System.Data;
 using Dapper;
-using UsersManagement.Users.Domain.ValueObject;
 using UsersManagement.Vehicles.Domain.ValueObject;
 
 namespace UsersManagement.Vehicles.Infrastructure.Mappers;

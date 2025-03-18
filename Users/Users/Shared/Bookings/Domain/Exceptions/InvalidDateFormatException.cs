@@ -1,4 +1,4 @@
-﻿namespace UsersManagement.Shared.Bookings.Domain.Exceptions;
+﻿namespace Users.Shared.Bookings.Domain.Exceptions;
 
 public class InvalidDateFormatException : Exception
 {

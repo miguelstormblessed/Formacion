@@ -1,4 +1,7 @@
-﻿namespace UsersManagement.Shared.Users.Domain.Responses;
+﻿using System.Text.Json;
+using UsersManagement.Shared.Vehicles.Domain.Responses;
+
+namespace UsersManagement.Shared.Users.Domain.Responses;
 
 public class UserResponse : IEquatable<UserResponse>
 {
@@ -40,5 +43,30 @@ public class UserResponse : IEquatable<UserResponse>
     public override int GetHashCode()
     {
         return HashCode.Combine(Id, Name, Email, State);
+    }
+
+    public  string ToJson()
+    {
+        return JsonSerializer.Serialize(this);
+    }
+    
+    public static UserResponse FromJson(string json)
+    {
+        var jsonVehicle = JsonSerializer.Deserialize<JsonElement>(json/*, options*/);
+
+        if (jsonVehicle.TryGetProperty("Id", out var idElement)
+            && jsonVehicle.TryGetProperty("Name", out var nameElement) 
+            && jsonVehicle.TryGetProperty("Email", out var emailElement)
+            && jsonVehicle.TryGetProperty("State", out var stateElement))
+        {
+            string? id = idElement.GetString();
+            string? name = nameElement.GetString();
+            string? email = emailElement.GetString();
+            bool state = stateElement.GetBoolean();
+
+            return Create(id, name,email, state);
+        }
+
+        return null;
     }
 }

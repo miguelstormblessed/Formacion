@@ -1,4 +1,4 @@
-﻿namespace UsersManagement.Shared.Vehicles.Domain.Responses;
+﻿namespace Users.Shared.Vehicles.Domain.Responses;
 
 public class VehicleResponseCtrl
 {

@@ -1,4 +1,4 @@
-﻿namespace UsersManagement.Shared.Vehicles.Domain.Requests;
+﻿namespace Users.Shared.Vehicles.Domain.Requests;
 
 public class VehicleRequest
 {

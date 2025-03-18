@@ -1,6 +1,4 @@
-﻿using UsersManagement.Shared.Bookings.Domain.Requests;
-
-namespace UsersManagement.Shared.Bookings.Domain.Responses;
+﻿namespace Users.Shared.Bookings.Domain.Responses;
 
 public class BookingResponseCtrl
 {

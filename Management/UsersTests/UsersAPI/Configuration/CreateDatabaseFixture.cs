@@ -2,7 +2,6 @@
 using FluentMigrator.Runner;
 using Microsoft.Extensions.DependencyInjection;
 using Testcontainers.MySql;
-using UsersManagement.Users.Domain;
 
 namespace UsersTests.UsersAPI.Configuration;
 

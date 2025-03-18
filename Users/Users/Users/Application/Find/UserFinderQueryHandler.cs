@@ -1,7 +1,6 @@
 ﻿using Cojali.Shared.Domain.Bus.Query;
-using UsersManagement.Shared.Users.Domain.Querys;
-using UsersManagement.Shared.Users.Domain.Responses;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
+using Users.Shared.Users.Domain.Querys;
+using Users.Shared.Users.Domain.Responses;
 using UsersManagement.Users.Domain;
 using UsersManagement.Users.Domain.ValueObject;
 

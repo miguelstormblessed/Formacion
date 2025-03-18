@@ -1,6 +1,6 @@
 ﻿using Cojali.Shared.Domain.Bus.Command;
 
-namespace UsersManagement.Shared.Vehicles.Domain.Commands;
+namespace Users.Shared.Vehicles.Domain.Commands;
 
 public class VehicleCreatorCommand : Command, IEquatable<VehicleCreatorCommand>
 {

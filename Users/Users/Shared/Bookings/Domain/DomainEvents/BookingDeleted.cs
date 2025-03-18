@@ -1,6 +1,6 @@
 ﻿using Cojali.Shared.Domain.Bus.Event;
 
-namespace UsersManagement.Shared.Bookings.Domain.DomainEvents;
+namespace Users.Shared.Bookings.Domain.DomainEvents;
 
 public class BookingDeleted : DomainEvent
 {

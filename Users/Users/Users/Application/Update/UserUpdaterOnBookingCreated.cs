@@ -1,5 +1,5 @@
 ﻿using Cojali.Shared.Domain.Bus.Event;
-using UsersManagement.Shared.Bookings.Domain.DomainEvents;
+using Users.Shared.Bookings.Domain.DomainEvents;
 using UsersManagement.Users.Application.Find;
 using UsersManagement.Users.Domain;
 using UsersManagement.Users.Domain.ValueObject;

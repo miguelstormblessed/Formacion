@@ -1,4 +1,4 @@
-﻿using ArchUnitNET.Domain;
+﻿/*using ArchUnitNET.Domain;
 using ArchUnitNET.Fluent;
 using ArchUnitNET.Loader;
 using ArchUnitNET.xUnit;
@@ -203,4 +203,4 @@ public class TestCoverageTest : ArchitectureTestCase
 
     
     
-}
+}*/

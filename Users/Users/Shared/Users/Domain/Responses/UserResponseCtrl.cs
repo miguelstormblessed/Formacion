@@ -1,4 +1,4 @@
-﻿namespace UsersManagement.Shared.Users.Domain.Responses;
+﻿namespace Users.Shared.Users.Domain.Responses;
 
 public class UserResponseCtrl
 {

@@ -1,4 +1,4 @@
-﻿namespace UsersManagement.Shared.Senders.Domain.Requests;
+﻿namespace Users.Shared.Senders.Domain.Requests;
 
 public class SenderRequest
 {

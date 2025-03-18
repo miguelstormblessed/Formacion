@@ -10,7 +10,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Bogus" Version="35.6.2" />
+        <PackageReference Include="Cojali.Shared.App" Version="0.15.1" />
         <PackageReference Include="Cojali.Shared.Domain" Version="0.15.1" />
+        <PackageReference Include="Cojali.Shared.Infrastructure.Bus" Version="0.15.1" />
         <PackageReference Include="coverlet.collector" Version="6.0.0"/>
         <PackageReference Include="Dapper" Version="2.1.66" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>

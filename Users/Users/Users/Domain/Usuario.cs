@@ -1,6 +1,6 @@
 ﻿using Cojali.Shared.Domain.Entity;
-using UsersManagement.Shared.Users.Domain.DomainEvents;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
+using Users.Shared.Users.Domain.DomainEvents;
+using Users.Shared.Vehicles.Domain.Responses;
 using UsersManagement.Users.Domain.ValueObject;
 
 namespace UsersManagement.Users.Domain

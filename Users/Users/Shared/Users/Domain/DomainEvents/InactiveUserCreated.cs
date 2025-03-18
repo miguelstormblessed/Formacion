@@ -1,6 +1,6 @@
 ﻿using Cojali.Shared.Domain.Bus.Event;
 
-namespace UsersManagement.Shared.Users.Domain.DomainEvents;
+namespace Users.Shared.Users.Domain.DomainEvents;
 
 public class InactiveUserCreated : DomainEvent
 {

@@ -7,7 +7,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Cojali.Shared.App" Version="0.15.1" />
       <PackageReference Include="Cojali.Shared.Domain" Version="0.15.1" />
+      <PackageReference Include="Cojali.Shared.Infrastructure.Bus" Version="0.15.1" />
       <PackageReference Include="Dapper" Version="2.1.66" />
       <PackageReference Include="MySql.Data" Version="9.2.0" />
       <PackageReference Include="MySqlConnector" Version="2.4.0" />

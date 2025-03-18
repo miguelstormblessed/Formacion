@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using Dapper;
 using MySql.Data.MySqlClient;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
+using Users.Shared.Vehicles.Domain.Responses;
 using UsersManagement.Users.Domain;
 using UsersManagement.Users.Domain.ValueObject;
 

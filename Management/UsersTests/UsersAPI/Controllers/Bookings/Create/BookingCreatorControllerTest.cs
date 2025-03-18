@@ -1,15 +1,17 @@
 ﻿using System.Net;
 using System.Net.Http.Json;
 using FluentAssertions;
+using Moq;
+using Newtonsoft.Json;
 using UsersManagement.Bookings.Domain;
 using UsersManagement.Shared.Bookings.Domain.Requests;
 using UsersManagement.Shared.Users.Domain.Requests;
+using UsersManagement.Shared.Users.Domain.Responses;
 using UsersManagement.Shared.Vehicles.Domain.Requests;
-using UsersManagement.Users.Domain;
 using UsersManagement.Vehicles.Domain;
 using UsersTests.UsersManagement.Bookings.Domain;
 using UsersTests.UsersManagement.Bookings.Domain.ValueObject;
-using UsersTests.UsersManagement.Users.Domain;
+using UsersTests.UsersManagement.Shared.Users.Responses;
 using UsersTests.UsersManagement.Vehicles.Domain;
 
 namespace UsersTests.UsersAPI.Controllers.Bookings.Create;
@@ -90,32 +92,33 @@ public class BookingCreatorControllerTest : ApiTestCase
     public async Task ShouldReturnCreated201()
     {
         // GIVEN
-        Vehicle vehicle = VehicleMother.CreateRandom();
-        VehicleRequest vehicleRequest = new VehicleRequest(vehicle.Id.IdValue, vehicle.VehicleRegistration.RegistrationValue,
-            vehicle.VehicleColor.Value.ToString());
-        HttpResponseMessage vehicleResponse = await this.HttpClient.PostAsJsonAsync("/VehicleCreator", vehicleRequest);
-
-        Usuario user = UserMother.CreateRandom();
-        UserRequest userRequest = new UserRequest(
-            user.Id.Id,
-            user.Name.Name,
-            user.Email.Email,
-            vehicle.Id.IdValue
-        );
-        HttpResponseMessage userResponse = await this.HttpClient.PostAsJsonAsync("/UserActiveCreator", userRequest);
-
+        // EXISTING IN DDBB
+        string vehicleId = "28548eac-8829-4275-b336-078e00e96f56";
+        string userId = "0babdeec-c946-4042-a2cf-c2b452d5176d";
+        
+        UserResponse userResponse = UserResponse.Create(
+            "0babdeec-c946-4042-a2cf-c2b452d5176d",
+            "ñalsdjkf",
+            "añlsdf@mail",
+            true);
+        
         BookingRequestCtrl requestCtrl = new BookingRequestCtrl(
             Guid.NewGuid().ToString(),
             BookingDateMother.CreateRandom().DateValue,
-            vehicle.Id.IdValue,
-            user.Id.Id);
+            vehicleId,
+            userId);
         
+        HttpResponseMessage mockResponse = new HttpResponseMessage(HttpStatusCode.OK);
+        mockResponse.Content = new StringContent(JsonConvert.SerializeObject(userResponse));
+    
+        // Configure the mock client service with the specific URL that will be called
+        HttpClientService
+            .Setup(h => h.GetAsync($"https://localhost:7172/UserFinder?id={userId}"))
+            .ReturnsAsync(mockResponse);
         // WHEN
         HttpResponseMessage response = await this.HttpClient.PostAsJsonAsync("/BookingCreator", requestCtrl);
         
         // THEN
-        vehicleResponse.StatusCode.Should().Be(HttpStatusCode.Created);
-        userResponse.StatusCode.Should().Be(HttpStatusCode.Created);
         response.StatusCode.Should().Be(HttpStatusCode.Created);
     }
     

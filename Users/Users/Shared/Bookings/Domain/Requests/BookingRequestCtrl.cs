@@ -1,4 +1,4 @@
-﻿namespace UsersManagement.Shared.Bookings.Domain.Requests;
+﻿namespace Users.Shared.Bookings.Domain.Requests;
 
 public class BookingRequestCtrl
 {

@@ -1,7 +1,6 @@
-﻿using System.Windows.Input;
-using Cojali.Shared.Domain.Bus.Command;
+﻿using Cojali.Shared.Domain.Bus.Command;
 
-namespace UsersManagement.Shared.Users.Domain.Commands;
+namespace Users.Shared.Users.Domain.Commands;
 
 public class UserUpdaterCommand : Command, IEquatable<UserUpdaterCommand>
 {

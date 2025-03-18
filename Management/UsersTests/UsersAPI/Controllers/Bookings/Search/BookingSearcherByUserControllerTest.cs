@@ -1,15 +1,16 @@
 ﻿using System.Net;
 using System.Net.Http.Json;
 using FluentAssertions;
+using Moq;
+using Newtonsoft.Json;
 using UsersManagement.Bookings.Domain;
 using UsersManagement.Shared.Bookings.Domain.Requests;
 using UsersManagement.Shared.Users.Domain.Requests;
 using UsersManagement.Shared.Users.Domain.Responses;
 using UsersManagement.Shared.Vehicles.Domain.Responses;
-using UsersManagement.Users.Domain;
 using UsersManagement.Vehicles.Domain;
 using UsersTests.UsersManagement.Bookings.Domain.ValueObject;
-using UsersTests.UsersManagement.Users.Domain;
+using UsersTests.UsersManagement.Shared.Users.Responses;
 using UsersTests.UsersManagement.Vehicles.Domain;
 
 namespace UsersTests.UsersAPI.Controllers.Bookings.Search;
@@ -31,9 +32,17 @@ public class BookingSearcherByUserControllerTest : ApiTestCase
     public async Task ShouldReturn404NotFound_WhenUserIsNotFound()
     {
         // GIVEN
-        string id = Guid.NewGuid().ToString();
+        string vehicleId = "28548eac-8829-4275-b336-078e00e96f56";
+        string userId = Guid.NewGuid().ToString();
+        
+        HttpResponseMessage mockResponse = new HttpResponseMessage(HttpStatusCode.NotFound);
+        
+        // Configure the mock client service with the specific URL that will be called
+        HttpClientService
+            .Setup(h => h.GetAsync(It.IsAny<string>()))
+            .ReturnsAsync(mockResponse);
         // WHEN
-        HttpResponseMessage response = await this.HttpClient.GetAsync($"BookingSearcherbyUser?id={id}");
+        HttpResponseMessage response = await this.HttpClient.GetAsync($"BookingSearcherbyUser?id={userId}");
         // THEN
         response.StatusCode.Should().Be(HttpStatusCode.NotFound);
     }
@@ -41,43 +50,31 @@ public class BookingSearcherByUserControllerTest : ApiTestCase
     public async Task ShouldReturn200Ok_WhenUserIsFound()
     {
         // GIVEN
-        Vehicle vehicle = VehicleMother.CreateRandom();
-        VehicleResponse vehicleResponse = VehicleResponse.Create(
-            vehicle.Id.IdValue,
-            vehicle.VehicleRegistration.RegistrationValue,
-            vehicle.VehicleColor.Value.ToString()
-        );
-        Usuario user = UserMother.CreateRandom();
-        user.Vehicle = vehicleResponse;
-        UserResponse userResponse = UserResponse.Create(
-            user.Id.Id,
-            user.Name.Name,
-            user.Email.Email,
-            user.State.Active
-        );
-        Booking booking = Booking.Create(
-            BookingIdMother.CreateRandom(),
-            BookingDateMother.CreateRandom(),
-            vehicleResponse,
-            userResponse
-        );
-        UserRequest userRequest = new UserRequest(
-            user.Id.Id,
-            user.Name.Name,
-            user.Email.Email,
-            vehicle.Id.IdValue
-        );
+        string vehicleId = "28548eac-8829-4275-b336-078e00e96f56";
+        string userId = "0babdeec-c946-4042-a2cf-c2b452d5176d";
         
-        BookingRequestCtrl bookingRequestCtrl = new BookingRequestCtrl(
-            booking.Id.IdValue,
-            booking.Date.DateValue,
-            booking.VehicleResponse.Id,
-            booking.UserResponse.Id);
+        UserResponse userResponse = UserResponse.Create(
+            "0babdeec-c946-4042-a2cf-c2b452d5176d",
+            "ñalsdjkf",
+            "añlsdf@mail",
+            true);
+        
+        BookingRequestCtrl requestCtrl = new BookingRequestCtrl(
+            Guid.NewGuid().ToString(),
+            BookingDateMother.CreateRandom().DateValue,
+            vehicleId,
+            userId);
+        HttpResponseMessage mockResponse = new HttpResponseMessage(HttpStatusCode.OK);
+        mockResponse.Content = new StringContent(JsonConvert.SerializeObject(userResponse));
+    
+        // Configure the mock client service with the specific URL that will be called
+        HttpClientService
+            .Setup(h => h.GetAsync($"https://localhost:7172/UserFinder?id={userId}"))
+            .ReturnsAsync(mockResponse);
         
         // WHEN
-        HttpResponseMessage userHttpResponse = await this.HttpClient.PostAsJsonAsync("/UserActiveCreator", userRequest);
-        HttpResponseMessage bookingHttpResponse = await this.HttpClient.PostAsJsonAsync("/BookingCreator", bookingRequestCtrl);
-        HttpResponseMessage response = await this.HttpClient.GetAsync($"/BookingSearcherbyUser?id={booking.UserResponse.Id}");
+        HttpResponseMessage bookingHttpResponse = await this.HttpClient.PostAsJsonAsync("/BookingCreator", requestCtrl);
+        HttpResponseMessage response = await this.HttpClient.GetAsync($"/BookingSearcherbyUser?id={userId}");
         // THEN
         response.StatusCode.Should().Be(HttpStatusCode.OK);
     }

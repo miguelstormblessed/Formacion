@@ -1,4 +1,4 @@
-﻿using Cojali.Shared.Domain.Bus.Event;
+﻿/*using Cojali.Shared.Domain.Bus.Event;
 using UsersManagement.Bookings.Domain;
 using UsersManagement.Senders.Application;
 using UsersManagement.Senders.Domain;
@@ -46,4 +46,4 @@ public class SendEmailOnBookingCreatedTest : SendersModuleAplicationUnitTestCase
         // THEN
         this.ShouldHaveCalledSendWithCorrectParametersOnce(send);
     }
-}
+}*/

@@ -1,8 +1,4 @@
-﻿using System.Text.Json;
-using System.Text.Json.Serialization;
-using UsersManagement.Users.Infrastructure.Mappers;
-using UsersManagement.Vehicles.Domain.ValueObject;
-using UsersManagement.Vehicles.Infrastructure.Mappers;
+﻿using UsersManagement.Vehicles.Domain.ValueObject;
 
 namespace UsersManagement.Vehicles.Domain;
 

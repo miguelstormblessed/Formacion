@@ -1,5 +1,5 @@
 ﻿using Cojali.Shared.Domain.Bus.Command;
-using UsersManagement.Shared.Users.Domain.Commands;
+using Users.Shared.Users.Domain.Commands;
 using UsersManagement.Users.Application.Find;
 using UsersManagement.Users.Domain.ValueObject;
 

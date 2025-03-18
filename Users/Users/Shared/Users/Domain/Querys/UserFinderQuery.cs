@@ -1,7 +1,7 @@
 ﻿using Cojali.Shared.Domain.Bus.Query;
-using UsersManagement.Shared.Users.Domain.Responses;
+using Users.Shared.Users.Domain.Responses;
 
-namespace UsersManagement.Shared.Users.Domain.Querys;
+namespace Users.Shared.Users.Domain.Querys;
 
 public class UserFinderQuery : Query<UserResponse> , IEquatable<UserFinderQuery>
 {

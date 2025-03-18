@@ -1,10 +1,7 @@
-﻿using Cojali.Shared.Domain.Bus.Event;
-using UsersManagement.Bookings.Application.Delete;
+﻿using UsersManagement.Bookings.Application.Delete;
 using UsersManagement.Bookings.Application.Find;
 using UsersManagement.Bookings.Domain;
-using UsersManagement.Shared.Bookings.Domain.DomainEvents;
 using UsersManagement.Shared.Users.Domain.Commands;
-using UsersManagement.Users.Application.Update;
 using UsersTests.UsersManagement.Bookings.Domain;
 
 namespace UsersTests.UsersManagement.Bookings.Application.Delete;

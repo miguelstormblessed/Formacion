@@ -1,4 +1,4 @@
-﻿namespace UsersManagement.Shared.Counters.Domain.Responses;
+﻿namespace Users.Shared.Counters.Domain.Responses;
 
 public class CountResponse
 {

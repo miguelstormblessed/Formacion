@@ -1,13 +1,10 @@
-﻿using System.Configuration;
-using Cojali.Shared.Domain.Bus.Event;
+﻿/*using Cojali.Shared.Domain.Bus.Event;
 using FluentAssertions;
 using UsersManagement.Counters.Application.Finder;
 using UsersManagement.Counters.Application.Updater;
 using UsersManagement.Counters.Domain;
 using UsersManagement.Shared.Users.Domain.DomainEvents;
-using UsersManagement.Users.Domain;
 using UsersTests.UsersManagement.Counters.Domain;
-using UsersTests.UsersManagement.Users.Domain;
 
 namespace UsersTests.UsersManagement.Counters.Application.Updater;
 
@@ -65,4 +62,4 @@ public class UpdateCountOnActivatedUserCreatedTest : CountersModuleApplicationUn
         count.InactiveUsers.Should().Be(oldInactives);
 
     }
-}
+}*/

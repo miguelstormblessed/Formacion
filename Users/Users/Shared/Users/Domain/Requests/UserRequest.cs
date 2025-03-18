@@ -1,5 +1,5 @@
 ﻿
-namespace UsersManagement.Shared.Users.Domain.Requests;
+namespace Users.Shared.Users.Domain.Requests;
 
 public class UserRequest
 {

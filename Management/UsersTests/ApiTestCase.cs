@@ -1,10 +1,14 @@
-﻿namespace UsersTests;
+﻿using Moq;
+using UsersManagement.Shared.HttpClient;
+using UsersManagement.Shared.Users.Domain.Responses;
+
+namespace UsersTests;
 [Collection("Tests collection")]
 public class ApiTestCase
 {
     private readonly TestWebApplicationFactory _factory;
     protected readonly HttpClient HttpClient;
-
+    protected Mock<IHttpClientService> HttpClientService => _factory.HttpClientServiceMock;
     protected ApiTestCase()
     {
         _factory = new TestWebApplicationFactory();
@@ -19,4 +23,5 @@ public class ApiTestCase
             _factory.Dispose();
         }
     }
+    
 }

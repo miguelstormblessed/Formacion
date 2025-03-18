@@ -1,7 +1,7 @@
 ﻿using Cojali.Shared.Domain.Bus.Query;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
+using Users.Shared.Vehicles.Domain.Responses;
 
-namespace UsersManagement.Shared.Vehicles.Domain.Querys;
+namespace Users.Shared.Vehicles.Domain.Querys;
 
 public class VehicleFinderQuery : Query<VehicleResponse>, IEquatable<VehicleFinderQuery>
 {

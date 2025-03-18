@@ -1,5 +1,4 @@
 ﻿using UsersManagement.Shared.Vehicles.Domain.Exceptions;
-using UsersManagement.Users.Domain;
 using UsersManagement.Vehicles.Domain;
 using UsersManagement.Vehicles.Domain.ValueObject;
 

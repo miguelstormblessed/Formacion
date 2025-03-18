@@ -1,15 +1,13 @@
 ﻿using System.Reflection;
 using System.Text.RegularExpressions;
-using ArchUnitNET.Fluent;
 using ArchUnitNET.Loader;
-using UsersManagement.Users.Domain;
 
 namespace UsersTests;
 
 public class ArchitectureTestCase
 {
     public static readonly ArchUnitNET.Domain.Architecture _architecture = new ArchLoader()
-        .LoadAssemblies(typeof(Usuario).Assembly)
+        .LoadAssemblies(Assembly.Load("UsersManagement"))
         .Build();
     
     

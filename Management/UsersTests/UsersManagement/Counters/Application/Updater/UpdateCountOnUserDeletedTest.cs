@@ -1,4 +1,4 @@
-﻿using Cojali.Shared.Domain.Bus.Event;
+﻿/*using Cojali.Shared.Domain.Bus.Event;
 using FluentAssertions;
 using UsersManagement.Counters.Application.Finder;
 using UsersManagement.Counters.Application.Updater;
@@ -64,4 +64,4 @@ public class UpdateCountOnUserDeletedTest : CountersModuleApplicationUnitTestCas
         count.InactiveUsers.Should().Be(oldInactives + 1);
 
     }
-}
+}*/

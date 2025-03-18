@@ -1,1 +1,19 @@
-Todas las clases tienen sus correspondientes test
+Las siguientes clases no tienen pruebas correspondienes:
+    UsersManagement.Shared.Users.Domain.Querys.UserFinderQuery
+    UsersManagement.Shared.Users.Domain.DomainEvents.ActivatedUserCreated
+    UsersManagement.Shared.Users.Domain.DomainEvents.InactiveUserCreated
+    UsersManagement.Shared.Users.Domain.DomainEvents.UserDeleted
+    UsersManagement.Shared.Users.Domain.DomainEvents.UserUpdated
+    UsersManagement.Shared.Users.Domain.Commands.UserUpdaterCommand
+    UsersManagement.Shared.HttpClient.HttpClientService
+    UsersManagement.Shared.Bookings.Domain.DomainEvents.BookingCreated
+    UsersManagement.Shared.Bookings.Domain.DomainEvents.BookingDeleted
+    UsersManagement.Senders.Application.SendEmailOnActivatedUserCreated
+    UsersManagement.Senders.Application.SendEmailOnBookingCreated
+    UsersManagement.Senders.Application.SendEmailOnInactiveUserCreated
+    UsersManagement.Senders.Application.SendEmailOnUserDeleted
+    UsersManagement.Senders.Application.SendEmailOnUserUpdated
+    UsersManagement.Counters.Application.Updater.UpdateCountOnActivatedUserCreated
+    UsersManagement.Counters.Application.Updater.UpdateCountOnInactiveUserCreated
+    UsersManagement.Counters.Application.Updater.UpdateCountOnUserDeleted
+    UsersManagement.Counters.Application.Updater.UpdateCountOnUserUpdated

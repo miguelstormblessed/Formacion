@@ -1,5 +1,4 @@
-using UsersManagement.Shared.Users.Domain.Exceptions;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
+using Users.Shared.Users.Domain.Exceptions;
 using UsersManagement.Users.Domain;
 using UsersManagement.Users.Domain.ValueObject;
 using UsersManagement.Users.Infrastructure.Mappers;

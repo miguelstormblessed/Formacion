@@ -1,4 +1,4 @@
-﻿namespace UsersManagement.Shared.Counters.Domain.Exceptions;
+﻿namespace Users.Shared.Counters.Domain.Exceptions;
 
 public class CountNotFoundException : Exception
 {
