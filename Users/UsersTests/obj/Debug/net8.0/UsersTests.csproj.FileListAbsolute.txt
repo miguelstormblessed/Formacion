@@ -1,0 +1,7 @@
+C:\Users\miguel.picazo\Desktop\Formación\Users\UsersTests\bin\Debug\net8.0\CoverletSourceRootsMapping_UsersTests
+C:\Users\miguel.picazo\Desktop\Formación\Users\UsersTests\obj\Debug\net8.0\UsersTests.csproj.AssemblyReference.cache
+C:\Users\miguel.picazo\Desktop\Formación\Users\UsersTests\obj\Debug\net8.0\UsersTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\miguel.picazo\Desktop\Formación\Users\UsersTests\obj\Debug\net8.0\UsersTests.AssemblyInfoInputs.cache
+C:\Users\miguel.picazo\Desktop\Formación\Users\UsersTests\obj\Debug\net8.0\UsersTests.AssemblyInfo.cs
+C:\Users\miguel.picazo\Desktop\Formación\Users\UsersTests\obj\Debug\net8.0\UsersTests.csproj.CoreCompileInputs.cache
+C:\Users\miguel.picazo\Desktop\Formación\Users\UsersTests\obj\Debug\net8.0\UsersTests.sourcelink.json
