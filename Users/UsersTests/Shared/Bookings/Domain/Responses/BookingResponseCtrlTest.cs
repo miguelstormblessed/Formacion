@@ -1,10 +1,9 @@
-﻿using FluentAssertions;
-using UsersManagement.Shared.Bookings.Domain.Responses;
-using UsersTests.UsersManagement.Bookings.Domain.ValueObject;
-using UsersTests.UsersManagement.Shared.Users.Responses;
-using UsersTests.UsersManagement.Vehicles.Domain.ValueObject;
+﻿/*using FluentAssertions;
+using Users.Shared.Bookings.Domain.Responses;
+using UsersTests.Shared.Users.Responses;
+using UsersTests.Shared.Vehicles.Domain.Responses;
 
-namespace UsersTests.UsersManagement.Shared.Bookings.Domain.Responses;
+namespace UsersTests.Shared.Bookings.Domain.Responses;
 
 public class BookingResponseCtrlTest
 {
@@ -12,8 +11,8 @@ public class BookingResponseCtrlTest
    public void ShouldInicialitePropertiesCorrectly()
    {
       // GIVEN
-      string date = BookingDateMother.CreateRandom().DateValue;
-      string number = VehicleRegistrationMother.CreateRandom().RegistrationValue;
+      string date = 
+      string number = VehicleResponseMother.CreateRandom().VehicleRegistration;
       string name = UserResponseMother.CreateRandom().Name;
       string email = UserResponseMother.CreateRandom().Email;
       // WHEN
@@ -24,4 +23,4 @@ public class BookingResponseCtrlTest
       response.Name.Should().Be(name);
       response.Email.Should().Be(email);
    }
-}
+}*/

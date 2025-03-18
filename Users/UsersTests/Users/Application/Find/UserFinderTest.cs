@@ -1,12 +1,10 @@
 using FluentAssertions;
-using Moq;
-using Org.BouncyCastle.Tls.Crypto;
-using UsersManagement.Shared.Users.Domain.Exceptions;
+using Users.Shared.Users.Domain.Exceptions;
 using UsersManagement.Users.Application.Find;
 using UsersManagement.Users.Domain;
-using UsersTests.UsersManagement.Users.Domain;
+using UsersTests.Users.Domain;
 
-namespace UsersTests.UsersManagement.Users.Application.Find;
+namespace UsersTests.Users.Application.Find;
 
 public class UserFinderTest : UserModuleApplicationUnitTestCase
 {

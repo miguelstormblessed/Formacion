@@ -1,15 +1,10 @@
 ﻿using FluentAssertions;
-using UsersManagement.Shared;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
 using UsersManagement.Users.Domain;
-using UsersManagement.Vehicles.Domain;
-using UsersTests.UsersAPI.Configuration;
-using UsersTests.UsersManagement.Shared.Vehicles.Domain.Responses;
-using UsersTests.UsersManagement.Users.Domain;
-using UsersTests.UsersManagement.Users.Domain.ValueObject;
-using UsersTests.UsersManagement.Vehicles.Domain;
+using UsersTests.Shared.Vehicles.Domain.Responses;
+using UsersTests.Users.Domain;
+using UsersTests.Users.Domain.ValueObject;
 
-namespace UsersTests.UsersManagement.Users.Infraestructure
+namespace UsersTests.Users.Infraestructure
 {
     public class UserRepositoryTest : UserModuleInfraestructureTestCase
     {

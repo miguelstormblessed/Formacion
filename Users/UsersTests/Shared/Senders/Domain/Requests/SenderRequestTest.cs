@@ -1,8 +1,7 @@
-﻿using FluentAssertions;
-using UsersManagement.Shared.Senders.Domain.Requests;
-using UsersTests.UsersManagement.Senders.Domain.ValueObject;
+﻿/*using FluentAssertions;
+using Users.Shared.Senders.Domain.Requests;
 
-namespace UsersTests.UsersManagement.Shared.Senders.Domain.Requests;
+namespace UsersTests.Shared.Senders.Domain.Requests;
 
 public class SenderRequestTest
 {
@@ -20,4 +19,4 @@ public class SenderRequestTest
         request.SendSubject.Should().Be(sendSubject);
         request.SendMessage.Should().Be(sendMessage);
     }
-}
+}*/

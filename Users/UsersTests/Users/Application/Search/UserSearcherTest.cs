@@ -2,9 +2,9 @@ using FluentAssertions;
 using Moq;
 using UsersManagement.Users.Application.Search;
 using UsersManagement.Users.Domain;
-using UsersTests.UsersManagement.Users.Domain;
+using UsersTests.Users.Domain;
 
-namespace UsersTests.UsersManagement.Users.Application.Search;
+namespace UsersTests.Users.Application.Search;
 
 public class UserSearcherTest : UserModuleApplicationUnitTestCase
 {

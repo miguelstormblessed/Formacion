@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
+using Users.Shared.Vehicles.Domain.Responses;
 
-namespace UsersTests.UsersManagement.Shared.Vehicles.Domain.Responses;
+namespace UsersTests.Shared.Vehicles.Domain.Responses;
 
 public class VehicleResponseTest
 {

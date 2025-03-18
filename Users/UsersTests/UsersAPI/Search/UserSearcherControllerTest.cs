@@ -1,8 +1,7 @@
 ﻿using System.Net;
 using FluentAssertions;
-using Microsoft.AspNetCore.Mvc.Testing;
 
-namespace UsersTests.UsersAPI.Controllers.Users.Search;
+namespace UsersTests.UsersAPI.Search;
 [Collection("Tests collection")]
 public class UserSearcherControllerTest : ApiTestCase
 {

@@ -1,24 +1,15 @@
-﻿using Cojali.Shared.Domain.Bus.Event;
-using Cojali.Shared.Domain.Repository;
-using FluentAssertions;
-using Microsoft.AspNetCore.Mvc;
-using UsersManagement.Senders.Application;
-using UsersManagement.Senders.Domain;
-using UsersManagement.Senders.Domain.ValueObject;
-using UsersManagement.Shared.Users.Domain.DomainEvents;
-using UsersManagement.Shared.Users.Domain.Exceptions;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
+﻿using FluentAssertions;
+using Users.Shared.Users.Domain.DomainEvents;
+using Users.Shared.Users.Domain.Exceptions;
+using Users.Shared.Vehicles.Domain.Responses;
 using UsersManagement.Users.Application.Delete;
 using UsersManagement.Users.Application.Find;
 using UsersManagement.Users.Domain;
-using UsersManagement.Users.Domain.ValueObject;
-using UsersManagement.Vehicles.Domain;
-using UsersTests.UsersManagement.Users.Domain;
-using UsersTests.UsersManagement.Users.Domain.ValueObject;
-using UsersTests.UsersManagement.Vehicles.Domain;
-using UsersTests.UsersManagement.Vehicles.Domain.ValueObject;
+using UsersTests.Shared.Vehicles.Domain.Responses;
+using UsersTests.Users.Domain;
+using UsersTests.Users.Domain.ValueObject;
 
-namespace UsersTests.UsersManagement.Users.Application.Delete;
+namespace UsersTests.Users.Application.Delete;
 
 public class UserDeleterTest : UserModuleApplicationUnitTestCase
 {
@@ -49,9 +40,7 @@ public class UserDeleterTest : UserModuleApplicationUnitTestCase
             UserIdMother.CreateRandom(),
             UserNameMother.CreateRandom(),
             UserEmailMother.CreateRandom(),
-            VehicleResponse.Create(VehicleIdMother.CreateRandom().IdValue, VehicleRegistrationMother.CreateRandom().RegistrationValue, 
-                VehicleColorMother.CreateRandom().Value.ToString())
-        );
+            VehicleResponseMother.CreateRandom());
         // We need this because Deleter uses the finder
         this.ShouldFindUser(user.Id, user);
         // WHEN
@@ -68,8 +57,7 @@ public class UserDeleterTest : UserModuleApplicationUnitTestCase
             UserIdMother.CreateRandom(),
             UserNameMother.CreateRandom(),
             UserEmailMother.CreateRandom(),
-            VehicleResponse.Create(VehicleIdMother.CreateRandom().IdValue, VehicleRegistrationMother.CreateRandom().RegistrationValue, 
-                VehicleColorMother.CreateRandom().Value.ToString())
+            VehicleResponseMother.CreateRandom()
         );
         this.ShouldFindUser(user.Id, user);
         // WHEN

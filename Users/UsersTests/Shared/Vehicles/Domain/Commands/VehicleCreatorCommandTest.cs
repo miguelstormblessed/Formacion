@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
-using UsersManagement.Shared.Vehicles.Domain.Commands;
+using Users.Shared.Vehicles.Domain.Commands;
 
-namespace UsersTests.UsersManagement.Shared.Vehicles.Domain.Commands;
+namespace UsersTests.Shared.Vehicles.Domain.Commands;
 
 public class VehicleCreatorCommandTest
 {

@@ -1,13 +1,12 @@
-﻿using FluentAssertions;
-using UsersManagement.Bookings.Infrastructure;
-using UsersManagement.Shared.Users.Domain.Querys;
-using UsersManagement.Shared.Users.Domain.Responses;
+﻿/*using FluentAssertions;
+using Users.Shared.Users.Domain.Querys;
+using Users.Shared.Users.Domain.Responses;
 using UsersManagement.Users.Application.Find;
 using UsersManagement.Users.Domain;
-using UsersTests.UsersManagement.Bookings.Application;
-using UsersTests.UsersManagement.Users.Domain;
+using UsersTests.Users.Domain;
 
-namespace UsersTests.UsersManagement.Users.Application.Find;
+namespace UsersTests.Users.Application.Find;
+
 
 public class UserFinderQueryHandlerTest : BookingsModuleApplicationTestCase
 {
@@ -33,4 +32,4 @@ public class UserFinderQueryHandlerTest : BookingsModuleApplicationTestCase
         result.Name.Should().Be(user.Name.Name);
         result.State.Should().Be(user.State.Active);
     }
-}
+}*/

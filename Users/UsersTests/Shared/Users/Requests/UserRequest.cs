@@ -1,8 +1,8 @@
 ﻿using FluentAssertions;
-using UsersManagement.Shared.Users.Domain.Requests;
-using UsersTests.UsersManagement.Shared.Users.Responses;
+using Users.Shared.Users.Domain.Requests;
+using UsersTests.Shared.Users.Responses;
 
-namespace UsersTests.UsersManagement.Shared.Users.Requests;
+namespace UsersTests.Shared.Users.Requests;
 
 public class UserRequestTest
 {

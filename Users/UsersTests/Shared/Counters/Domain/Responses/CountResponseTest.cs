@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
-using UsersManagement.Shared.Counters.Domain.Responses;
+using Users.Shared.Counters.Domain.Responses;
 
-namespace UsersTests.UsersManagement.Shared.Counters.Domain.Responses;
+namespace UsersTests.Shared.Counters.Domain.Responses;
 
 public class CountResponseTest
 {

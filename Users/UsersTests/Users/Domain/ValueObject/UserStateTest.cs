@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using UsersManagement.Users.Domain.ValueObject;
 
-namespace UsersTests.UsersManagement.Users.Domain.ValueObject;
+namespace UsersTests.Users.Domain.ValueObject;
 
 public class UserStateTest
 {

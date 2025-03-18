@@ -1,15 +1,14 @@
 ﻿using System.Net;
 using System.Net.Http.Json;
+using Bogus.DataSets;
 using FluentAssertions;
-using Microsoft.AspNetCore.Mvc.Testing;
-using UsersManagement.Shared.Users.Domain.Requests;
+using Users.Shared.Users.Domain.Requests;
+using Users.Shared.Vehicles.Domain.Responses;
 using UsersManagement.Users.Domain;
-using UsersManagement.Vehicles.Domain;
-using UsersManagement.Vehicles.Domain.ValueObject;
-using UsersTests.UsersManagement.Users.Domain;
-using UsersTests.UsersManagement.Vehicles.Domain;
+using UsersTests.Shared.Vehicles.Domain.Responses;
+using UsersTests.Users.Domain;
 
-namespace UsersTests.UsersAPI.Controllers.Users.Create;
+namespace UsersTests.UsersAPI.Create;
 [Collection("Tests collection")]
 public class UserInactiveCreatorControllerTest : ApiTestCase
 {
@@ -29,12 +28,12 @@ public class UserInactiveCreatorControllerTest : ApiTestCase
     {
         // GIVEN
         Usuario user = UserMother.CreateRandom();
-        Vehicle vehicle = VehicleMother.CreateRandom();
+        VehicleResponse vehicle = VehicleResponseMother.CreateRandom();
         UserRequest request = new UserRequest(
             "dkaldkfj",
             user.Name.Name,
             user.Email.Email,
-            vehicle.Id.IdValue);
+            vehicle.Id);
         // WHEN
         HttpResponseMessage response = await this.HttpClient.PostAsJsonAsync("/UserInactiveCreator", request);
         // THEN
@@ -45,13 +44,13 @@ public class UserInactiveCreatorControllerTest : ApiTestCase
     {
         // GIVEN
         Usuario user = UserMother.CreateRandom();
-        Vehicle vehicle = Vehicle.Create(VehicleId.Create("28d45f10-dbf8-4b1c-99df-d139fa215d80"),
-            VehicleRegistration.Create("4vicz-ihq67"), VehicleColor.CreateVehicleColor(VehicleColor.ColorValue.Green));
+        VehicleResponse vehicle = VehicleResponse.Create("28d45f10-dbf8-4b1c-99df-d139fa215d80",
+            "4vicz-ihq67", "Green");
         UserRequest request = new UserRequest(
             user.Id.Id,
             user.Name.Name,
             user.Email.Email,
-            vehicle.Id.IdValue);
+            vehicle.Id);
         // WHEN
         
         HttpResponseMessage response = await this.HttpClient.PostAsJsonAsync("/UserInactiveCreator", request);

@@ -1,17 +1,16 @@
 ﻿using System.Net;
 using System.Net.Http.Json;
-using Cojali.Shared.App.Api;
+using Bogus.DataSets;
 using FluentAssertions;
-using Microsoft.AspNetCore.Mvc.Testing;
-using UsersManagement.Shared.Users.Domain.Requests;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
+using Moq;
+using Newtonsoft.Json;
+using Users.Shared.Users.Domain.Requests;
+using Users.Shared.Vehicles.Domain.Responses;
 using UsersManagement.Users.Domain;
-using UsersManagement.Vehicles.Domain;
-using UsersManagement.Vehicles.Domain.ValueObject;
-using UsersTests.UsersManagement.Users.Domain;
-using UsersTests.UsersManagement.Vehicles.Domain;
+using UsersTests.Shared.Vehicles.Domain.Responses;
+using UsersTests.Users.Domain;
 
-namespace UsersTests.UsersAPI.Controllers.Users.Create;
+namespace UsersTests.UsersAPI.Create;
 [Collection("Tests collection")]
 public class UserActiveCreatorControllerTest : ApiTestCase
 {
@@ -31,12 +30,12 @@ public class UserActiveCreatorControllerTest : ApiTestCase
     {
         // GIVEN
         Usuario user = UserMother.CreateRandom();
-        Vehicle vehicle = VehicleMother.CreateRandom();
+        VehicleResponse vehicle = VehicleResponseMother.CreateRandom();
         UserRequest request = new UserRequest(
             "dkaldkfj",
             user.Name.Name,
             user.Email.Email,
-            vehicle.Id.IdValue);
+            vehicle.Id);
         // WHEN
         HttpResponseMessage response = await this.HttpClient.PostAsJsonAsync("/UserActiveCreator", request);
         // THEN
@@ -48,13 +47,16 @@ public class UserActiveCreatorControllerTest : ApiTestCase
         // GIVEN
         Usuario user = UserMother.CreateRandom();
         // Existing vehicle in bbdd
-        Vehicle vehicle = Vehicle.Create(VehicleId.Create("28d45f10-dbf8-4b1c-99df-d139fa215d80"),
-            VehicleRegistration.Create("4vicz-ihq67"), VehicleColor.CreateVehicleColor(VehicleColor.ColorValue.Green));
+        VehicleResponse vehicle = VehicleResponseMother.CreateRandom();
         UserRequest request = new UserRequest(
             user.Id.Id,
             user.Name.Name,
             user.Email.Email,
-            vehicle.Id.IdValue);
+            vehicle.Id);
+        HttpResponseMessage mockResponse = new HttpResponseMessage(HttpStatusCode.OK);
+        mockResponse.Content = new StringContent(JsonConvert.SerializeObject(vehicle));
+
+        this.ShouldFindVehicleByHttp(mockResponse);
         // WHEN
         
         HttpResponseMessage response = await this.HttpClient.PostAsJsonAsync("/UserActiveCreator", request);

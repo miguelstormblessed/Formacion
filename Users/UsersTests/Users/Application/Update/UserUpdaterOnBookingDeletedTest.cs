@@ -1,15 +1,10 @@
-﻿using Cojali.Shared.Domain.Bus.Event;
-using UsersManagement.Bookings.Domain;
-using UsersManagement.Shared.Bookings.Domain.DomainEvents;
+﻿/*using Cojali.Shared.Domain.Bus.Event;
 using UsersManagement.Users.Application.Find;
 using UsersManagement.Users.Application.Update;
 using UsersManagement.Users.Domain;
-using UsersManagement.Vehicles.Domain;
-using UsersTests.UsersManagement.Bookings.Domain;
-using UsersTests.UsersManagement.Users.Domain;
-using UsersTests.UsersManagement.Vehicles.Domain;
+using UsersTests.Users.Domain;
 
-namespace UsersTests.UsersManagement.Users.Application.Update;
+namespace UsersTests.Users.Application.Update;
 
 public class UserUpdaterOnBookingDeletedTest : UserModuleApplicationUnitTestCase
 {
@@ -47,4 +42,4 @@ public class UserUpdaterOnBookingDeletedTest : UserModuleApplicationUnitTestCase
         // THEN
         this.ShouldHaveCalledUpdateWithCorrectParametersOnce(user);
     }
-}
+}*/

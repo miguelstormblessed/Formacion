@@ -1,7 +1,7 @@
-﻿using UsersManagement.Users.Domain;
-using UsersTests.UsersAPI.Configuration;
+﻿using Microsoft.VisualStudio.TestPlatform.TestHost;
+using UsersManagement.Users.Domain;
 
-namespace UsersTests.UsersManagement.Users.Infraestructure;
+namespace UsersTests.Users.Infraestructure;
 
 public class UserModuleInfraestructureTestCase : InfraestructureTestCase<Program>
 {

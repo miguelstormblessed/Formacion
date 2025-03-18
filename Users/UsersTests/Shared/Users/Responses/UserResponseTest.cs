@@ -1,8 +1,7 @@
-﻿
-using FluentAssertions;
-using UsersManagement.Shared.Users.Domain.Responses;
+﻿using FluentAssertions;
+using Users.Shared.Users.Domain.Responses;
 
-namespace UsersTests.UsersManagement.Shared.Users.Responses;
+namespace UsersTests.Shared.Users.Responses;
 
 public class UserResponseTest
 {

@@ -1,8 +1,7 @@
 ﻿using FluentAssertions;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
-using UsersTests.UsersManagement.Vehicles.Domain.ValueObject;
+using Users.Shared.Vehicles.Domain.Responses;
 
-namespace UsersTests.UsersManagement.Shared.Vehicles.Domain.Responses;
+namespace UsersTests.Shared.Vehicles.Domain.Responses;
 
 public class VehicleResponseCtrlTest
 {
@@ -10,8 +9,8 @@ public class VehicleResponseCtrlTest
     public void ShouldInicialitePropertiesCorrectly()
     {
         // GIVEN
-        string color = VehicleColorMother.CreateRandom().Value.ToString();
-        string number = VehicleRegistrationMother.CreateRandom().RegistrationValue;
+        string color = VehicleResponseMother.CreateRandom().VehicleColor;
+        string number = VehicleResponseMother.CreateRandom().VehicleRegistration;
         // WHEN
         VehicleResponseCtrl response = new VehicleResponseCtrl(color, number);
         // THEN

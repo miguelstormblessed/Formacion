@@ -1,3 +1,4 @@
+using System.Net;
 using Cojali.Shared.Domain.Bus.Command;
 using Cojali.Shared.Domain.Bus.Event;
 using Cojali.Shared.Domain.Bus.Query;
@@ -48,7 +49,10 @@ public class UserActiveCreator
 
         HttpResponseMessage response =
             await this._httpClientService.GetAsync($"https://localhost:7239/VehicleFinder?id={vehicleId}");
-        
+        if (response.StatusCode == HttpStatusCode.NotFound)
+        {
+            throw new VehicleNotFoundException();
+        }
         VehicleResponse? vehicle = VehicleResponse.FromJson(response.Content.ReadAsStringAsync().Result);
         
         Usuario user = Usuario.CreateUserActivated(userId, userName, userEmail, vehicle);

@@ -1,10 +1,10 @@
 ﻿using Bogus;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
+using Users.Shared.Vehicles.Domain.Responses;
 using UsersManagement.Users.Domain;
 using UsersManagement.Users.Domain.ValueObject;
-using UsersTests.UsersManagement.Shared.Vehicles.Domain.Responses;
+using UsersTests.Shared.Vehicles.Domain.Responses;
 
-namespace UsersTests.UsersManagement.Users.Domain;
+namespace UsersTests.Users.Domain;
 
 public static class UserMother
 {

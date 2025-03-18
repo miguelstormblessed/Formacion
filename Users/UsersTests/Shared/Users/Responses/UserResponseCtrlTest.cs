@@ -1,8 +1,8 @@
 ﻿using FluentAssertions;
-using UsersManagement.Shared.Users.Domain.Responses;
-using UsersTests.UsersManagement.Vehicles.Domain.ValueObject;
+using Users.Shared.Users.Domain.Responses;
+using UsersTests.Shared.Vehicles.Domain.Responses;
 
-namespace UsersTests.UsersManagement.Shared.Users.Responses;
+namespace UsersTests.Shared.Users.Responses;
 
 public class UserResponseCtrlTest
 {
@@ -12,8 +12,8 @@ public class UserResponseCtrlTest
         // GIVEN
         string name = UserResponseMother.CreateRandom().Name;
         string email = UserResponseMother.CreateRandom().Email;
-        string registrationNumber = VehicleRegistrationMother.CreateRandom().RegistrationValue;
-        string color = VehicleColorMother.CreateRandom().Value.ToString();
+        string registrationNumber = VehicleResponseMother.CreateRandom().VehicleRegistration;
+        string color = VehicleResponseMother.CreateRandom().VehicleColor;
         // WHEN
         UserResponseCtrl response = UserResponseCtrl.Create(name, email, registrationNumber, color);
         // THEN

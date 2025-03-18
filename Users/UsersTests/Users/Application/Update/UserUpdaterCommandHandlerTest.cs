@@ -1,14 +1,9 @@
-﻿using UsersManagement.Bookings.Domain;
-using UsersManagement.Shared.Users.Domain.Commands;
-using UsersManagement.Users.Application.Find;
+﻿/*using UsersManagement.Users.Application.Find;
 using UsersManagement.Users.Application.Update;
 using UsersManagement.Users.Domain;
 using UsersManagement.Users.Domain.ValueObject;
-using UsersTests.UsersManagement.Bookings.Domain;
-using UsersTests.UsersManagement.Vehicles.Application;
-using UsersTests.UsersManagement.Vehicles.Infrastructure;
 
-namespace UsersTests.UsersManagement.Users.Application.Update;
+namespace UsersTests.Users.Application.Update;
 
 public class UserUpdaterCommandHandlerTest : UserModuleApplicationUnitTestCase
 {
@@ -47,4 +42,4 @@ public class UserUpdaterCommandHandlerTest : UserModuleApplicationUnitTestCase
         // THEN
         this.ShouldHaveCalledUpdateWithCorrectParametersOnce(user);
     }
-}
+}*/

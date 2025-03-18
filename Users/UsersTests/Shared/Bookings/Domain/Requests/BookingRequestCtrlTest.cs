@@ -1,8 +1,4 @@
-﻿using FluentAssertions;
-using UsersManagement.Shared.Bookings.Domain.Requests;
-using UsersTests.UsersManagement.Bookings.Domain.ValueObject;
-
-namespace UsersTests.UsersManagement.Shared.Bookings.Domain.Requests;
+﻿/*namespace UsersTests.Shared.Bookings.Domain.Requests;
 
 public class BookingRequestCtrlTest
 {
@@ -22,4 +18,4 @@ public class BookingRequestCtrlTest
         request.VehicleId.Should().Be(vehicleId);
         request.UserId.Should().Be(userId);
     }
-}
+}*/

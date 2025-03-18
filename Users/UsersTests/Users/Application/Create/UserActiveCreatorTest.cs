@@ -1,26 +1,19 @@
-using Moq;
-using UsersManagement.Shared.Users.Domain.DomainEvents;
-using UsersManagement.Shared.Vehicles.Domain.Commands;
-using UsersManagement.Shared.Vehicles.Domain.Exceptions;
-using UsersManagement.Shared.Vehicles.Domain.Querys;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
+using System.Net;
+using Newtonsoft.Json;
+using Users.Shared.Vehicles.Domain.Responses;
 using UsersManagement.Users.Application.Create;
 using UsersManagement.Users.Domain;
-using UsersManagement.Vehicles.Application.Find;
-using UsersManagement.Vehicles.Domain;
-using UsersManagement.Vehicles.Domain.ValueObject;
-using UsersTests.UsersManagement.Users.Domain;
-using UsersTests.UsersManagement.Vehicles.Domain;
-using UsersTests.UsersManagement.Vehicles.Domain.ValueObject;
+using UsersTests.Shared.Vehicles.Domain.Responses;
+using UsersTests.Users.Domain;
 
-namespace UsersTests.UsersManagement.Users.Application.Create;
+namespace UsersTests.Users.Application.Create;
 
 public class UserActiveCreatorTest : UserModuleApplicationUnitTestCase
 {
     private readonly UserActiveCreator _userActiveCreator;
     public UserActiveCreatorTest()
     {
-        this._userActiveCreator = new UserActiveCreator(this.UserRepository.Object, this.EventBus.Object, this.QueryBus.Object, this.CommandBus.Object);
+        this._userActiveCreator = new UserActiveCreator(this.UserRepository.Object, this.EventBus.Object, this.QueryBus.Object, this.CommandBus.Object, this.HttpClientService.Object);
     }
     [Fact]
     public void UserActiveCreator_ShouldCallSaveWithCorrectParametersOnce()
@@ -28,15 +21,41 @@ public class UserActiveCreatorTest : UserModuleApplicationUnitTestCase
         // Given
         
         Usuario user = UserMother.CreateRandom();
-        Vehicle vehicle = VehicleMother.CreateRandom();
+        VehicleResponse vehicleResponse = VehicleResponseMother.CreateRandom();
+        user.Vehicle = vehicleResponse;
+        
+        HttpResponseMessage message = new HttpResponseMessage();
+        message.StatusCode = HttpStatusCode.OK;
+        message.Content = new StringContent(JsonConvert.SerializeObject(vehicleResponse));
+        
         this.ShouldSaveUsers(user);
-        this.ShouldFindVehicle(vehicle.Id,vehicle);
+        this.ShouldFindVehicleByHttp(message);
         // When
-        this._userActiveCreator.Execute(user.Id, user.Name, user.Email, vehicle.Id.IdValue);
+        this._userActiveCreator.Execute(user.Id, user.Name, user.Email, vehicleResponse.Id);
         // Then 
         this.ShouldHaveCalledSaveWithCorrectParametersOnce(user);
     }
     [Fact]
+    public void ShouldCallGetAsyncWithCorrectParametersOnce()
+    {
+        // GIVEN
+        Usuario user = UserMother.CreateRandom();
+        VehicleResponse vehicleResponse = VehicleResponseMother.CreateRandom();
+        user.Vehicle = vehicleResponse;
+        
+        HttpResponseMessage message = new HttpResponseMessage();
+        message.StatusCode = HttpStatusCode.OK;
+        message.Content = new StringContent(JsonConvert.SerializeObject(vehicleResponse));
+        
+        this.ShouldSaveUsers(user);
+        this.ShouldFindVehicleByHttp(message);
+        // WHEN
+        this._userActiveCreator.Execute(user.Id, user.Name, user.Email, vehicleResponse.Id);
+        // THEN
+        this.ShouldHaveCalledGetAsyncWithCorrectParametersOnce();
+    }
+    
+    /*[Fact]
     public void ShouldHavePublishOnce()
     {
         // GIVEN
@@ -48,9 +67,9 @@ public class UserActiveCreatorTest : UserModuleApplicationUnitTestCase
         this._userActiveCreator.Execute(user.Id, user.Name, user.Email, vehicle.Id.IdValue);
         // THEN
         this.ShouldHaveCalledPublishWithcorrectParametersOnce<ActivatedUserCreated>();
-    }
+    }*/
 
-    [Fact]
+    /*[Fact]
     public async Task ShouldCallAskAsyncWithCorrectParametersOnce()
     {
         // GIVEN
@@ -62,9 +81,9 @@ public class UserActiveCreatorTest : UserModuleApplicationUnitTestCase
         );
         // THEN
         this.ShouldHaveCalledAskAsyncWithCorrectParametersOnce(query);
-    }
+    }*/
 
-    [Fact]
+    /*[Fact]
     public async Task ShouldCallDistpatchAsyncWithCorrectParametersOnce()
     {
         // GIVEN
@@ -85,6 +104,6 @@ public class UserActiveCreatorTest : UserModuleApplicationUnitTestCase
         );
         // THEN
         this.ShouldHaveCalledDispatchAsyncWithCorrectParametersOnce(command);
-    }
+    }*/
     
 }

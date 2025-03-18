@@ -16,9 +16,18 @@
         <PackageReference Include="Cojali.Shared.Infrastructure.Bus" Version="0.15.1" />
         <PackageReference Include="coverlet.collector" Version="6.0.0"/>
         <PackageReference Include="Dapper" Version="2.1.66" />
+        <PackageReference Include="FluentAssertions" Version="8.2.0" />
+        <PackageReference Include="FluentMigrator" Version="6.2.0" />
+        <PackageReference Include="FluentMigrator.Runner" Version="6.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.14" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
+        <PackageReference Include="Moq" Version="4.20.72" />
         <PackageReference Include="MySql.Data" Version="9.2.0" />
         <PackageReference Include="MySqlConnector" Version="2.4.0" />
+        <PackageReference Include="Testcontainers" Version="4.3.0" />
+        <PackageReference Include="Testcontainers.MsSql" Version="4.3.0" />
+        <PackageReference Include="Testcontainers.MySql" Version="4.3.0" />
+        <PackageReference Include="TngTech.ArchUnitNET.xUnit" Version="0.11.3" />
         <PackageReference Include="xunit" Version="2.5.3"/>
         <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3"/>
     </ItemGroup>

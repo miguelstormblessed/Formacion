@@ -1,15 +1,11 @@
 ﻿using Cojali.Shared.Domain.Bus.Event;
 using FluentAssertions;
-using UsersManagement.Shared.Users.Domain.DomainEvents;
-using UsersManagement.Shared.Vehicles.Domain.Responses;
+using Users.Shared.Users.Domain.DomainEvents;
+using Users.Shared.Vehicles.Domain.Responses;
 using UsersManagement.Users.Domain;
-using UsersManagement.Users.Domain.ValueObject;
-using UsersManagement.Vehicles.Domain;
-using UsersManagement.Vehicles.Domain.ValueObject;
-using UsersTests.UsersManagement.Shared.Vehicles.Domain.Responses;
-using UsersTests.UsersManagement.Vehicles.Domain;
+using UsersTests.Shared.Vehicles.Domain.Responses;
 
-namespace UsersTests.UsersManagement.Users.Domain;
+namespace UsersTests.Users.Domain;
 
 public class UsuarioTest
 {

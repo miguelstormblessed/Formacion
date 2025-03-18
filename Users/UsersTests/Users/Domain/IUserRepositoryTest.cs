@@ -1,4 +1,4 @@
-﻿namespace UsersTests.UsersManagement.Users.Domain
+﻿namespace UsersTests.Users.Domain
 {
     public interface UserRepositoryTest
     {

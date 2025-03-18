@@ -1,8 +1,7 @@
 ﻿using FluentAssertions;
-using UsersManagement.Shared.Vehicles.Domain.Querys;
-using UsersManagement.Vehicles.Application.Find;
+using Users.Shared.Vehicles.Domain.Querys;
 
-namespace UsersTests.UsersManagement.Shared.Vehicles.Domain.Querys;
+namespace UsersTests.Shared.Vehicles.Domain.Querys;
 
 public class VehicleFinderQueryTest
 {

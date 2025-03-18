@@ -1,14 +1,14 @@
 ﻿using System.Net;
 using System.Net.Http.Json;
 using FluentAssertions;
-using Microsoft.AspNetCore.Mvc.Testing;
-using UsersManagement.Shared.Users.Domain.Requests;
+using Newtonsoft.Json;
+using Users.Shared.Users.Domain.Requests;
+using Users.Shared.Vehicles.Domain.Responses;
 using UsersManagement.Users.Domain;
-using UsersManagement.Vehicles.Domain;
-using UsersManagement.Vehicles.Domain.ValueObject;
-using UsersTests.UsersManagement.Users.Domain;
+using UsersTests.Shared.Vehicles.Domain.Responses;
+using UsersTests.Users.Domain;
 
-namespace UsersTests.UsersAPI.Controllers.Users.Find;
+namespace UsersTests.UsersAPI.Find;
 [Collection("Tests collection")]
 public class UserFinderControllerTest : ApiTestCase
 {
@@ -41,13 +41,18 @@ public class UserFinderControllerTest : ApiTestCase
     {
         // GIVEN
         Usuario user = UserMother.CreateRandom();
-        Vehicle vehicle = Vehicle.Create(VehicleId.Create("28d45f10-dbf8-4b1c-99df-d139fa215d80"),
-            VehicleRegistration.Create("4vicz-ihq67"),VehicleColor.CreateVehicleColor(VehicleColor.ColorValue.Green));
+        // Existing vehicle in bbdd
+        VehicleResponse vehicle = VehicleResponseMother.CreateRandom();
         UserRequest request = new UserRequest(
             user.Id.Id,
             user.Name.Name,
             user.Email.Email,
-            vehicle.Id.IdValue);
+            vehicle.Id);
+        
+        HttpResponseMessage mockResponse = new HttpResponseMessage(HttpStatusCode.OK);
+        mockResponse.Content = new StringContent(JsonConvert.SerializeObject(vehicle));
+        this.ShouldFindVehicleByHttp(mockResponse);
+        
         HttpResponseMessage responseCreate = await this.HttpClient.PostAsJsonAsync("/UserActiveCreator", request);
         // WHEN
         HttpResponseMessage response = await HttpClient.GetAsync($"/UserFinder?id={user.Id.Id}");

@@ -1,8 +1,8 @@
 ﻿using FluentAssertions;
-using UsersManagement.Shared.Users.Domain.Exceptions;
+using Users.Shared.Users.Domain.Exceptions;
 using UsersManagement.Users.Domain.ValueObject;
 
-namespace UsersTests.UsersManagement.Users.Domain.ValueObject;
+namespace UsersTests.Users.Domain.ValueObject;
 
 public class UserNameTest
 {

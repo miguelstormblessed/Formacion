@@ -1,8 +1,8 @@
 ﻿using FluentAssertions;
-using UsersManagement.Shared.Vehicles.Domain.Requests;
-using UsersTests.UsersManagement.Vehicles.Domain.ValueObject;
+using Users.Shared.Vehicles.Domain.Requests;
+using UsersTests.Shared.Vehicles.Domain.Responses;
 
-namespace UsersTests.UsersManagement.Shared.Vehicles.Domain.Requests;
+namespace UsersTests.Shared.Vehicles.Domain.Requests;
 
 public class VehicleRequestTest
 {
@@ -11,8 +11,8 @@ public class VehicleRequestTest
     {
         // GIVEN
         string id = Guid.NewGuid().ToString();
-        string registrationNumber = VehicleRegistrationMother.CreateRandom().RegistrationValue;
-        string vehicleColor = VehicleColorMother.CreateRandom().Value.ToString();
+        string registrationNumber = VehicleResponseMother.CreateRandom().VehicleRegistration;
+        string vehicleColor = VehicleResponseMother.CreateRandom().VehicleColor;
         // WHEN
         VehicleRequest request = new VehicleRequest(id, registrationNumber, vehicleColor);
         // THEN

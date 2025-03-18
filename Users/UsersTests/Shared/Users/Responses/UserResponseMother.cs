@@ -1,8 +1,7 @@
-﻿using System.Runtime.CompilerServices;
-using Bogus;
-using UsersManagement.Shared.Users.Domain.Responses;
+﻿using Bogus;
+using Users.Shared.Users.Domain.Responses;
 
-namespace UsersTests.UsersManagement.Shared.Users.Responses;
+namespace UsersTests.Shared.Users.Responses;
 
 public class UserResponseMother
 {
