@@ -14,169 +14,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4e258cd-dd57-4f9d-9e38-05616f93fff6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TestProject1/Migrations/CreateDatabase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Bookings/Domain/Requests/BookingRequestCtrlTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Bookings/Domain/Responses/BookingResponseCtrlTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Counters/Domain/Responses/CountResponseTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Senders/Domain/Requests/SenderRequestTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Users/DomainEvents/ActivatedUserCreatedTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Users/DomainEvents/InactiveUserCreatedTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Users/DomainEvents/UserDeletedTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Users/DomainEvents/UserUpdatedTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Users/Requests/UserRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Users/Requests/UserUpdaterRequestTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Users/Responses/UserResponseCtrlTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Users/Responses/UserResponseMother.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Users/Responses/UserResponseTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Vehicles/Domain/Commands/VehicleCreatorCommandTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Vehicles/Domain/Querys/VehicleFinderQueryTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Vehicles/Domain/Requests/VehicleRequestTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Vehicles/Domain/Responses/VehicleResponseCtrlTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Vehicles/Domain/Responses/VehicleResponseMother.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Shared/Vehicles/Domain/Responses/VehicleResponseTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Application/Create/UserActiveCreatorTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Application/Create/UserInactiveCreatorTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Application/Delete/UserDeleterTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Application/Find/UserFinderQueryHandlerTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Application/Find/UserFinderTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Application/Search/UserSearcherTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Application/Update/UserUpdaterCommandHandlerTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Application/Update/UserUpdaterOnBookingCreatedTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Application/Update/UserUpdaterOnBookingDeletedTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Application/Update/UserUpdaterTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Application/UserModuleApplicationUnitTestCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Domain/IUserRepositoryTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Domain/UserMother.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Domain/UsuarioTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Domain/ValueObject/UserEmailMother.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Domain/ValueObject/UserEmailTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Domain/ValueObject/UserIdMother.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Domain/ValueObject/UserIdTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Domain/ValueObject/UserNameMother.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Domain/ValueObject/UserNameTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Domain/ValueObject/UserStateMother.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Domain/ValueObject/UserStateTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Infraestructure/UserModuleInfraestructureTestCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/Users/Infraestructure/UserRepositoryTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/UsersAPI/Configuration/CreateDatabaseFixture.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/UsersAPI/Configuration/DockerConnectionStringProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/UsersAPI/Configuration/DockerDatabaseConfigsExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/UsersAPI/Create/UserActiveCreatorControllerTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/UsersAPI/Create/UserInactiveCreatorControllerTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/UsersAPI/Delete/UserDeleterControllerTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/UsersAPI/Find/UserFinderControllerTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/UsersAPI/Search/UserSearcherControllerTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProject1/UsersAPI/Update/UserUpdaterControllerTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UsersTests/ApiTestCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UsersTests/ArchitectureTestCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UsersTests/InfraestructureTestCase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UsersTests/Migrations/CreateDatabase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UsersTests/TestWebApplicationFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UsersTests/UsersAPI/Configuration/CreateDatabaseFixture.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UsersTests/UsersAPI/Configuration/DockerConnectionStringProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UsersTests/UsersAPI/Configuration/DockerDatabaseConfigsExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UsersTests/Shared/Bookings/Domain/Requests/BookingRequestMother.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UsersTests/Shared/Bookings/Domain/Responses/BookingResponseMother.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UsersTests/Shared/Senders/Domain/Requests/SenderRequestMother.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Management/.idea/.idea.pruebaTecnica/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/.idea/.idea.pruebaTecnica/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/UsersAPI/obj/Debug/net8.0/UsersAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/UsersAPI/obj/Debug/net8.0/UsersAPI.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/UsersAPI/obj/Debug/net8.0/UsersAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/UsersAPI/obj/Debug/net8.0/UsersAPI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/UsersAPI/obj/Debug/net8.0/UsersAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/UsersAPI/obj/Debug/net8.0/UsersAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/UsersManagement/obj/Debug/net8.0/UsersManagement.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/UsersManagement/obj/Debug/net8.0/UsersManagement.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/UsersManagement/obj/Debug/net8.0/UsersManagement.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/UsersManagement/obj/Debug/net8.0/UsersManagement.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Management/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Management/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Users/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Users/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Users.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/Users.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Users/Users.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/Users/Application/Create/UserActiveCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Users/Users/Application/Create/UserActiveCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/Users/Application/Create/UserInactiveCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Users/Users/Application/Create/UserInactiveCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/Users/Application/Update/UserUpdater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Users/Users/Application/Update/UserUpdater.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/bin/Debug/net8.0/Users.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Users/bin/Debug/net8.0/Users.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Users/bin/Debug/net8.0/Users.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Users/bin/Debug/net8.0/Users.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Users/bin/Debug/net8.0/Users.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Users/bin/Debug/net8.0/Users.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Users/obj/Debug/net8.0/Users.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Users/obj/Debug/net8.0/Users.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Users/obj/Debug/net8.0/Users.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Users/obj/Debug/net8.0/Users.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/obj/Debug/net8.0/Users.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Users/obj/Debug/net8.0/Users.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Users/obj/Debug/net8.0/Users.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Users/obj/Debug/net8.0/Users.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Users/obj/Debug/net8.0/Users.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Users/obj/Debug/net8.0/Users.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Users/obj/Debug/net8.0/Users.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Users/obj/Debug/net8.0/Users.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Users/obj/Debug/net8.0/ref/Users.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Users/obj/Debug/net8.0/ref/Users.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Users/obj/Debug/net8.0/refint/Users.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Users/obj/Debug/net8.0/refint/Users.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Users/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Users/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersAPI/UsersAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/UsersAPI.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/Users.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/Users.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/Users.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/Users.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/ref/UsersAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/ref/UsersAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/refint/UsersAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/refint/UsersAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersAPI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Bookings/Domain/Requests/BookingRequestCtrlTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Bookings/Domain/Requests/BookingRequestCtrlTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Bookings/Domain/Responses/BookingResponseCtrlTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Bookings/Domain/Responses/BookingResponseCtrlTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Counters/Domain/Responses/CountResponseTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Counters/Domain/Responses/CountResponseTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Senders/Domain/Requests/SenderRequestTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Senders/Domain/Requests/SenderRequestTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Users/Requests/UserRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Users/Requests/UserRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Users/Requests/UserUpdaterRequestTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Users/Requests/UserUpdaterRequestTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Users/Responses/UserResponseCtrlTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Users/Responses/UserResponseCtrlTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Users/Responses/UserResponseMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Users/Responses/UserResponseMother.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Users/Responses/UserResponseTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Users/Responses/UserResponseTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Vehicles/Domain/Commands/VehicleCreatorCommandTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Vehicles/Domain/Commands/VehicleCreatorCommandTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Vehicles/Domain/Querys/VehicleFinderQueryTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Vehicles/Domain/Querys/VehicleFinderQueryTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Vehicles/Domain/Requests/VehicleRequestTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Vehicles/Domain/Requests/VehicleRequestTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Vehicles/Domain/Responses/VehicleResponseCtrlTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Vehicles/Domain/Responses/VehicleResponseCtrlTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Vehicles/Domain/Responses/VehicleResponseMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Vehicles/Domain/Responses/VehicleResponseMother.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Shared/Vehicles/Domain/Responses/VehicleResponseTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Shared/Vehicles/Domain/Responses/VehicleResponseTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/UnitTest1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Application/Create/UserActiveCreatorTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Application/Create/UserActiveCreatorTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Application/Create/UserInactiveCreatorTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Application/Create/UserInactiveCreatorTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Application/Delete/UserDeleterTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Application/Delete/UserDeleterTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Application/Find/UserFinderQueryHandlerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Application/Find/UserFinderQueryHandlerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Application/Find/UserFinderTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Application/Find/UserFinderTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Application/Search/UserSearcherTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Application/Search/UserSearcherTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Application/Update/UserUpdaterCommandHandlerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Application/Update/UserUpdaterCommandHandlerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Application/Update/UserUpdaterOnBookingCreatedTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Application/Update/UserUpdaterOnBookingCreatedTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Application/Update/UserUpdaterOnBookingDeletedTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Application/Update/UserUpdaterOnBookingDeletedTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Application/Update/UserUpdaterTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Application/Update/UserUpdaterTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Application/UserModuleApplicationUnitTestCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Application/UserModuleApplicationUnitTestCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Domain/IUserRepositoryTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Domain/IUserRepositoryTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Domain/UserMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Domain/UserMother.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Domain/UsuarioTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Domain/UsuarioTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserEmailMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserEmailMother.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserEmailTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserEmailTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserIdMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserIdMother.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserIdTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserIdTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserNameMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserNameMother.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserNameTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserNameTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserStateMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserStateMother.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserStateTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Domain/ValueObject/UserStateTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Infraestructure/UserModuleInfraestructureTestCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Infraestructure/UserModuleInfraestructureTestCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Users/Infraestructure/UserRepositoryTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Users/Infraestructure/UserRepositoryTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/UsersAPI/Create/UserActiveCreatorControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/UsersAPI/Create/UserActiveCreatorControllerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/UsersAPI/Create/UserInactiveCreatorControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/UsersAPI/Create/UserInactiveCreatorControllerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/UsersAPI/Delete/UserDeleterControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/UsersAPI/Delete/UserDeleterControllerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/UsersAPI/Find/UserFinderControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/UsersAPI/Find/UserFinderControllerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/UsersAPI/Search/UserSearcherControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/UsersAPI/Search/UserSearcherControllerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/UsersAPI/Update/UserUpdaterControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/UsersAPI/Update/UserUpdaterControllerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/UsersTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/UsersTests.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/obj/UsersTests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/UsersTests.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/obj/UsersTests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/UsersTests.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/obj/UsersTests.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/UsersTests.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,23 +100,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.UsersAPI: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.UsersAPI: https.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "c39b92f5-538c-46e1-87e7-da8ff215555f.executor": "Debug",
-    "fea52ba2-3927-404e-9346-0e540ceb49d8.executor": "Debug",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.UsersAPI: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.UsersAPI: https.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;c39b92f5-538c-46e1-87e7-da8ff215555f.executor&quot;: &quot;Debug&quot;,
+    &quot;fea52ba2-3927-404e-9346-0e540ceb49d8.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.UsersAPI: https">
     <configuration name="WpfApp1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -361,7 +240,8 @@
       <workItem from="1742286023526" duration="2135000" />
       <workItem from="1742288173207" duration="67000" />
       <workItem from="1742288250086" duration="9360000" />
-      <workItem from="1742308031147" duration="4734000" />
+      <workItem from="1742308031147" duration="6370000" />
+      <workItem from="1742367801653" duration="2265000" />
     </task>
     <task id="LOCAL-00001" summary="repository creation">
       <option name="closed" value="true" />
@@ -379,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742215063993</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="users bounded context test passing">
+      <option name="closed" value="true" />
+      <created>1742312920310</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742312920310</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +278,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="repository creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="repository creation" />
+    <MESSAGE value="users bounded context test passing" />
+    <option name="LAST_COMMIT_MESSAGE" value="users bounded context test passing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

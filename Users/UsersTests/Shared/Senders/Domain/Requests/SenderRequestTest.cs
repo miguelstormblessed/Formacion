@@ -1,4 +1,4 @@
-﻿/*using FluentAssertions;
+﻿using FluentAssertions;
 using Users.Shared.Senders.Domain.Requests;
 
 namespace UsersTests.Shared.Senders.Domain.Requests;
@@ -9,14 +9,12 @@ public class SenderRequestTest
     public void ShouldInicialitePropertiesCorrectly()
     {
         // GIVEN
-        string sendTo = SendToMother.CreateRandom().To;
-        string sendSubject = SendSubjectMother.CreateRandom().Subject;
-        string sendMessage = SendMessageMother.CreateRandom().Message;
+        SenderRequest senderRequest = SenderRequestMother.CreateRandom();
         // WHEN
-        SenderRequest request = new SenderRequest(sendTo, sendSubject, sendMessage);
+        SenderRequest request = new SenderRequest(senderRequest.SendTo, senderRequest.SendSubject, senderRequest.SendMessage);
         // THEN
-        request.SendTo.Should().Be(sendTo);
-        request.SendSubject.Should().Be(sendSubject);
-        request.SendMessage.Should().Be(sendMessage);
+        request.SendTo.Should().Be(senderRequest.SendTo);
+        request.SendSubject.Should().Be(senderRequest.SendSubject);
+        request.SendMessage.Should().Be(senderRequest.SendMessage);
     }
-}*/
+}

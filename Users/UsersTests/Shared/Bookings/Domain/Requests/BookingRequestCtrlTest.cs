@@ -1,4 +1,7 @@
-﻿/*namespace UsersTests.Shared.Bookings.Domain.Requests;
+﻿using FluentAssertions;
+using Users.Shared.Bookings.Domain.Requests;
+
+namespace UsersTests.Shared.Bookings.Domain.Requests;
 
 public class BookingRequestCtrlTest
 {
@@ -6,16 +9,17 @@ public class BookingRequestCtrlTest
     public void ShouldInicialitePropertiesCorrectly()
     {
         // GIVEN
-        string date = BookingDateMother.CreateRandom().DateValue;
-        string id = Guid.NewGuid().ToString();
-        string vehicleId = Guid.NewGuid().ToString();
-        string userId = Guid.NewGuid().ToString();
+        BookingRequestCtrl bookingRequestCtrl = BookingRequestMother.CreateRandom();
         // WHEN
-        BookingRequestCtrl request = new BookingRequestCtrl(id, date, vehicleId, userId);
+        BookingRequestCtrl request = new BookingRequestCtrl(
+            bookingRequestCtrl.Id,
+            bookingRequestCtrl.Date,
+            bookingRequestCtrl.VehicleId,
+            bookingRequestCtrl.UserId);
         // THEN
-        request.Date.Should().Be(date);
-        request.Id.Should().Be(id);
-        request.VehicleId.Should().Be(vehicleId);
-        request.UserId.Should().Be(userId);
+        request.Date.Should().Be(bookingRequestCtrl.Date);
+        request.Id.Should().Be(bookingRequestCtrl.Id);
+        request.VehicleId.Should().Be(bookingRequestCtrl.VehicleId);
+        request.UserId.Should().Be(bookingRequestCtrl.UserId);
     }
-}*/
+}
