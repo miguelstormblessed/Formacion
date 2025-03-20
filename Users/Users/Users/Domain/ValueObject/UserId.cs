@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using Users.Shared.Users.Domain.Exceptions;
 
-namespace UsersManagement.Users.Domain.ValueObject;
+namespace Users.Users.Domain.ValueObject;
 
 public class UserId
 {

@@ -14,16 +14,16 @@ public class HexArchClassAllModules : ArchitectureTestCase
     
     private readonly string _filePathDomain;
     private readonly string _filePathApplication;
-    private readonly string _rootNamespace;
     private readonly ITestOutputHelper _output;
+    private readonly string _rootNamespace;
     public HexArchClassAllModules(ITestOutputHelper output)
     {
         _output = output;
         string outputDomainPath = @"..\..\..\Architecture\DomainTestResults.txt";
         string outputApplicationPath = @"..\..\..\Architecture\ApplicationTestResults.txt";
+        _rootNamespace = "Users";
         _filePathDomain = Path.GetFullPath(outputDomainPath);
         _filePathApplication = Path.GetFullPath(outputApplicationPath);
-        _rootNamespace = "UsersManagement";
     }
 
     [Fact]
@@ -53,8 +53,7 @@ public class HexArchClassAllModules : ArchitectureTestCase
                     .Or().ResideInNamespace("System(\\..+)?$", true)
         );
     }
-    
-    
+
     private void CheckLayerDependencies(
         string layerName,
         string outputFilePath,
@@ -94,7 +93,6 @@ public class HexArchClassAllModules : ArchitectureTestCase
         
         errors.Should().BeEmpty();
     }
-    
     
     
 }

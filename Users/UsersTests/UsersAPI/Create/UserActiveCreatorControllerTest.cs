@@ -6,7 +6,7 @@ using Moq;
 using Newtonsoft.Json;
 using Users.Shared.Users.Domain.Requests;
 using Users.Shared.Vehicles.Domain.Responses;
-using UsersManagement.Users.Domain;
+using Users.Users.Domain;
 using UsersTests.Shared.Vehicles.Domain.Responses;
 using UsersTests.Users.Domain;
 

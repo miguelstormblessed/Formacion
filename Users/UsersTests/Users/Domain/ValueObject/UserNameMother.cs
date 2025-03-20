@@ -1,5 +1,5 @@
 ﻿using Bogus;
-using UsersManagement.Users.Domain.ValueObject;
+using Users.Users.Domain.ValueObject;
 
 namespace UsersTests.Users.Domain.ValueObject;
 

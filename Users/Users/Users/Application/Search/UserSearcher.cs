@@ -1,6 +1,6 @@
-using UsersManagement.Users.Domain;
+using Users.Users.Domain;
 
-namespace UsersManagement.Users.Application.Search;
+namespace Users.Users.Application.Search;
 
 public class UserSearcher
 {

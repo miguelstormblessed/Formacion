@@ -7,7 +7,7 @@ namespace UsersTests;
 public class ArchitectureTestCase
 {
     public static readonly ArchUnitNET.Domain.Architecture _architecture = new ArchLoader()
-        .LoadAssemblies(Assembly.Load("UsersManagement"))
+        .LoadAssemblies(Assembly.Load("Users"))
         .Build();
     
     
@@ -20,7 +20,7 @@ public class ArchitectureTestCase
         var allTypes = _architecture.Types;
         
         // Regex para extraer el nombre del módulo desde el espacio de nombres
-        var namespaceRegex = new Regex(@"^UsersManagement\.([^\.]+)");
+        var namespaceRegex = new Regex(@"^Users\.([^\.]+)");
         
         foreach (var type in allTypes)
         {

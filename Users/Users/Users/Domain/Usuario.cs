@@ -1,9 +1,9 @@
 ﻿using Cojali.Shared.Domain.Entity;
 using Users.Shared.Users.Domain.DomainEvents;
 using Users.Shared.Vehicles.Domain.Responses;
-using UsersManagement.Users.Domain.ValueObject;
+using Users.Users.Domain.ValueObject;
 
-namespace UsersManagement.Users.Domain
+namespace Users.Users.Domain
 {
     public class Usuario : AggregateRoot
     {

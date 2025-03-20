@@ -1,4 +1,4 @@
-﻿using Cojali.Shared.Domain.Bus.Event;
+﻿/*using Cojali.Shared.Domain.Bus.Event;
 using Users.Shared.Bookings.Domain.DomainEvents;
 using UsersManagement.Users.Application.Find;
 using UsersManagement.Users.Domain;
@@ -31,4 +31,4 @@ public class UserUpdaterOnBookingCreated : IDomainEventSubscriber<BookingCreated
         
         return Task.CompletedTask;
     }
-}
+}*/

@@ -1,6 +1,6 @@
-﻿using UsersManagement.Users.Domain.ValueObject;
+﻿using Users.Users.Domain.ValueObject;
 
-namespace UsersManagement.Users.Domain
+namespace Users.Users.Domain
 {
     public interface IUserRepository
     {

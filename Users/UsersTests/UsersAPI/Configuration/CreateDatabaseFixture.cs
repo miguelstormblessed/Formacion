@@ -11,13 +11,10 @@ public class CreateDatabaseFixture : IAsyncLifetime
     public MySqlContainer container;
     public async Task InitializeAsync()
     {
-        /*string outputPath = @"..\..\..\..\mysql";
-        string _filePath = Path.GetFullPath(outputPath);*/
         container = new MySqlBuilder()
             .WithDatabase("testdbdocker")
             .WithUsername("admin")
             .WithPassword("admin")
-            //.WithBindMount()
             .Build();
         await container.StartAsync();
 

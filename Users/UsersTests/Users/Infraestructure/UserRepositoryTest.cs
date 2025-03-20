@@ -1,5 +1,5 @@
 ﻿using FluentAssertions;
-using UsersManagement.Users.Domain;
+using Users.Users.Domain;
 using UsersTests.Shared.Vehicles.Domain.Responses;
 using UsersTests.Users.Domain;
 using UsersTests.Users.Domain.ValueObject;

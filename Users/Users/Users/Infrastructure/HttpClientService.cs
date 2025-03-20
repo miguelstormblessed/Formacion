@@ -1,6 +1,7 @@
 using System.Net.Http.Json;
+using Users.Users.Domain;
 
-namespace Users.Shared.HttpClient;
+namespace Users.Users.Infrastructure;
 
 public class HttpClientService : IHttpClientService
 {

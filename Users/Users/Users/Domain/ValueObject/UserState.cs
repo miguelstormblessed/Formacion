@@ -1,4 +1,4 @@
-﻿namespace UsersManagement.Users.Domain.ValueObject;
+﻿namespace Users.Users.Domain.ValueObject;
 
 public class UserState
 {

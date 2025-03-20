@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Moq;
-using UsersManagement.Users.Application.Search;
-using UsersManagement.Users.Domain;
+using Users.Users.Application.Search;
+using Users.Users.Domain;
 using UsersTests.Users.Domain;
 
 namespace UsersTests.Users.Application.Search;

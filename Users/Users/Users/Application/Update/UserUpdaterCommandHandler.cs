@@ -1,4 +1,4 @@
-﻿using Cojali.Shared.Domain.Bus.Command;
+﻿/*using Cojali.Shared.Domain.Bus.Command;
 using Users.Shared.Users.Domain.Commands;
 using UsersManagement.Users.Application.Find;
 using UsersManagement.Users.Domain.ValueObject;
@@ -22,4 +22,4 @@ public class UserUpdaterCommandHandler : ICommandHandler<UserUpdaterCommand>
         string? vehicle = command.Vehicle;
         await this.userUpdater.Execute(userId, userName, userEmail, userState, vehicle);
     }
-}
+}*/

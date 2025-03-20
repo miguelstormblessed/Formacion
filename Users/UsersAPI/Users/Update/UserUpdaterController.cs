@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Users.Shared.Users.Domain.Exceptions;
 using Users.Shared.Users.Domain.Requests;
-using UsersManagement.Users.Application.Update;
-using UsersManagement.Users.Domain.ValueObject;
+using Users.Users.Application.Update;
+using Users.Users.Domain.ValueObject;
 
 namespace UsersAPI.Controllers.Users.Update
 {

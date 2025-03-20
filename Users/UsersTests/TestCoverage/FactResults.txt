@@ -1,0 +1,1 @@
+Todas las clases de prueba tienen al menos una prueba

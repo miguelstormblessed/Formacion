@@ -1,7 +1,7 @@
 ﻿using Bogus;
 using Users.Shared.Vehicles.Domain.Responses;
-using UsersManagement.Users.Domain;
-using UsersManagement.Users.Domain.ValueObject;
+using Users.Users.Domain;
+using Users.Users.Domain.ValueObject;
 using UsersTests.Shared.Vehicles.Domain.Responses;
 
 namespace UsersTests.Users.Domain;

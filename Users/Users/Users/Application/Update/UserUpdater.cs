@@ -1,16 +1,13 @@
 using System.Net;
 using Cojali.Shared.Domain.Bus.Event;
 using Cojali.Shared.Domain.Bus.Query;
-using Users.Shared.HttpClient;
 using Users.Shared.Vehicles.Domain.Exceptions;
-using Users.Shared.Vehicles.Domain.Querys;
 using Users.Shared.Vehicles.Domain.Responses;
-using UsersManagement.Users.Application.Find;
-using UsersManagement.Users.Domain;
-using UsersManagement.Users.Domain.ValueObject;
-using ZstdSharp;
+using Users.Users.Application.Find;
+using Users.Users.Domain;
+using Users.Users.Domain.ValueObject;
 
-namespace UsersManagement.Users.Application.Update;
+namespace Users.Users.Application.Update;
 
 public class UserUpdater
 {

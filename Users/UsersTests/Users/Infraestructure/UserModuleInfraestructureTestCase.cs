@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestPlatform.TestHost;
-using UsersManagement.Users.Domain;
+using Users.Users.Domain;
 
 namespace UsersTests.Users.Infraestructure;
 

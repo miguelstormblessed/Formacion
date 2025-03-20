@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Users.Shared.Users.Domain.Exceptions;
 using Users.Shared.Users.Domain.Responses;
-using UsersManagement.Users.Application.Find;
-using UsersManagement.Users.Domain;
-using UsersManagement.Users.Domain.ValueObject;
+using Users.Users.Application.Find;
+using Users.Users.Domain;
+using Users.Users.Domain.ValueObject;
 
 namespace UsersAPI.Users.Find;
 

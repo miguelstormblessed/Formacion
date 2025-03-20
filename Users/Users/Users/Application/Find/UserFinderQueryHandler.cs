@@ -1,4 +1,4 @@
-﻿using Cojali.Shared.Domain.Bus.Query;
+﻿/*using Cojali.Shared.Domain.Bus.Query;
 using Users.Shared.Users.Domain.Querys;
 using Users.Shared.Users.Domain.Responses;
 using UsersManagement.Users.Domain;
@@ -21,4 +21,4 @@ public class UserFinderQueryHandler : IQueryHandler<UserFinderQuery, UserRespons
         Usuario user = this._userFinder.Execute(id);
         return UserResponse.Create(id.Id, user.Name.Name, user.Email.Email, user.State.Active);
     }
-}
+}*/

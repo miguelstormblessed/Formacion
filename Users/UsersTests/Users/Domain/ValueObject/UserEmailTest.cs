@@ -1,6 +1,6 @@
 ﻿using FluentAssertions;
 using Users.Shared.Users.Domain.Exceptions;
-using UsersManagement.Users.Domain.ValueObject;
+using Users.Users.Domain.ValueObject;
 
 namespace UsersTests.Users.Domain.ValueObject;
 

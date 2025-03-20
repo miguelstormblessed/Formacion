@@ -2,9 +2,9 @@
 using Users.Shared.Users.Domain.DomainEvents;
 using Users.Shared.Users.Domain.Exceptions;
 using Users.Shared.Vehicles.Domain.Responses;
-using UsersManagement.Users.Application.Delete;
-using UsersManagement.Users.Application.Find;
-using UsersManagement.Users.Domain;
+using Users.Users.Application.Delete;
+using Users.Users.Application.Find;
+using Users.Users.Domain;
 using UsersTests.Shared.Vehicles.Domain.Responses;
 using UsersTests.Users.Domain;
 using UsersTests.Users.Domain.ValueObject;

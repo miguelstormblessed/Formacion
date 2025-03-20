@@ -2,7 +2,7 @@
 using FluentAssertions;
 using Users.Shared.Users.Domain.DomainEvents;
 using Users.Shared.Vehicles.Domain.Responses;
-using UsersManagement.Users.Domain;
+using Users.Users.Domain;
 using UsersTests.Shared.Vehicles.Domain.Responses;
 
 namespace UsersTests.Users.Domain;

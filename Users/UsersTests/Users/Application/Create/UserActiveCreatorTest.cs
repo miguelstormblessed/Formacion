@@ -1,8 +1,8 @@
 using System.Net;
 using Newtonsoft.Json;
 using Users.Shared.Vehicles.Domain.Responses;
-using UsersManagement.Users.Application.Create;
-using UsersManagement.Users.Domain;
+using Users.Users.Application.Create;
+using Users.Users.Domain;
 using UsersTests.Shared.Vehicles.Domain.Responses;
 using UsersTests.Users.Domain;
 

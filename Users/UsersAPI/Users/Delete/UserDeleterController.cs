@@ -1,8 +1,8 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 using Users.Shared.Users.Domain.Exceptions;
-using UsersManagement.Users.Application.Delete;
-using UsersManagement.Users.Domain.ValueObject;
+using Users.Users.Application.Delete;
+using Users.Users.Domain.ValueObject;
 
 namespace UsersAPI.Controllers.Users.Delete;
 [ApiController]

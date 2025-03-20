@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Users.Shared.Users.Domain.Responses;
-using UsersManagement.Users.Application.Search;
-using UsersManagement.Users.Domain;
+using Users.Users.Application.Search;
+using Users.Users.Domain;
 
 namespace UsersAPI.Controllers.Users.Search
 {

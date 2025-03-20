@@ -9,17 +9,16 @@ using Cojali.Shared.Infrastructure.Bus.Memory;
 using Dapper;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using MySql.Data.MySqlClient;
-using Users.Shared.HttpClient;
 using Users.Shared.Users.Domain.DomainEvents;
-using UsersManagement.Users.Application.Create;
-using UsersManagement.Users.Application.Delete;
-using UsersManagement.Users.Application.Find;
-using UsersManagement.Users.Application.Search;
-using UsersManagement.Users.Application.Update;
-using UsersManagement.Users.Domain;
-using UsersManagement.Users.Domain.ValueObject;
-using UsersManagement.Users.Infrastructure;
-using UsersManagement.Users.Infrastructure.Mappers;
+using Users.Users.Application.Create;
+using Users.Users.Application.Delete;
+using Users.Users.Application.Find;
+using Users.Users.Application.Search;
+using Users.Users.Application.Update;
+using Users.Users.Domain;
+using Users.Users.Domain.ValueObject;
+using Users.Users.Infrastructure;
+using Users.Users.Infrastructure.Mappers;
 
 var builder = WebApplication.CreateBuilder(args);
 

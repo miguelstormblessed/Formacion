@@ -1,8 +1,8 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 using Users.Shared.Users.Domain.Requests;
-using UsersManagement.Users.Application.Create;
-using UsersManagement.Users.Domain.ValueObject;
+using Users.Users.Application.Create;
+using Users.Users.Domain.ValueObject;
 
 
 namespace UsersAPI.Controllers.Users.Create

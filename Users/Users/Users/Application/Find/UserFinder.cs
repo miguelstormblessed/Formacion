@@ -1,9 +1,8 @@
 using Users.Shared.Users.Domain.Exceptions;
-using UsersManagement.Users.Domain;
-using UsersManagement.Users.Domain.ValueObject;
-using UsersManagement.Users.Infrastructure.Mappers;
+using Users.Users.Domain;
+using Users.Users.Domain.ValueObject;
 
-namespace UsersManagement.Users.Application.Find;
+namespace Users.Users.Application.Find;
 
 public class UserFinder
 {

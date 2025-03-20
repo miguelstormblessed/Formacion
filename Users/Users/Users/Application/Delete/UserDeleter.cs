@@ -1,10 +1,10 @@
 ﻿using Cojali.Shared.Domain.Bus.Event;
 using Users.Shared.Users.Domain.Exceptions;
-using UsersManagement.Users.Application.Find;
-using UsersManagement.Users.Domain;
-using UsersManagement.Users.Domain.ValueObject;
+using Users.Users.Application.Find;
+using Users.Users.Domain;
+using Users.Users.Domain.ValueObject;
 
-namespace UsersManagement.Users.Application.Delete;
+namespace Users.Users.Application.Delete;
 
 public class UserDeleter
 {

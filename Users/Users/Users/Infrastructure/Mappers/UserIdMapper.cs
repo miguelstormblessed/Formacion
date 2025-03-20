@@ -1,8 +1,8 @@
 ﻿using System.Data;
 using Dapper;
-using UsersManagement.Users.Domain.ValueObject;
+using Users.Users.Domain.ValueObject;
 
-namespace UsersManagement.Users.Infrastructure.Mappers;
+namespace Users.Users.Infrastructure.Mappers;
 
 public class UserIdMapper : SqlMapper.TypeHandler<UserId>
 {

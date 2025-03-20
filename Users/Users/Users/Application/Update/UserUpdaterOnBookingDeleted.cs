@@ -1,4 +1,4 @@
-﻿using Cojali.Shared.Domain.Bus.Event;
+﻿/*using Cojali.Shared.Domain.Bus.Event;
 using Users.Shared.Bookings.Domain.DomainEvents;
 using UsersManagement.Users.Application.Find;
 using UsersManagement.Users.Domain;
@@ -29,4 +29,4 @@ public class UserUpdaterOnBookingDeleted : IDomainEventSubscriber<BookingDeleted
         Usuario user = _userFinder.Execute(userId);
         await _userUpdater.Execute(user.Id, user.Name, user.Email, user.State, null);
     }
-}                
+}                */

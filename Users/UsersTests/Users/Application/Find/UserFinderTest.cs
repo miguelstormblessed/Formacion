@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Users.Shared.Users.Domain.Exceptions;
-using UsersManagement.Users.Application.Find;
-using UsersManagement.Users.Domain;
+using Users.Users.Application.Find;
+using Users.Users.Domain;
 using UsersTests.Users.Domain;
 
 namespace UsersTests.Users.Application.Find;

@@ -1,12 +1,11 @@
 using System.Net;
 using Moq;
 using Newtonsoft.Json;
-using Users.Shared.HttpClient;
 using Users.Shared.Users.Domain.DomainEvents;
 using Users.Shared.Vehicles.Domain.Responses;
-using UsersManagement.Users.Application.Find;
-using UsersManagement.Users.Application.Update;
-using UsersManagement.Users.Domain;
+using Users.Users.Application.Find;
+using Users.Users.Application.Update;
+using Users.Users.Domain;
 using UsersTests.Shared.Vehicles.Domain.Responses;
 using UsersTests.Users.Domain;
 

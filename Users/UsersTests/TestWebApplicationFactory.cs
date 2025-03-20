@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Moq;
-using Users.Shared.HttpClient;
+using Users.Users.Domain;
 using UsersTests.UsersAPI.Configuration;
 
 namespace UsersTests;

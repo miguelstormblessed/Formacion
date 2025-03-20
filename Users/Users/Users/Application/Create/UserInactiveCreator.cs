@@ -2,15 +2,12 @@
 using Cojali.Shared.Domain.Bus.Command;
 using Cojali.Shared.Domain.Bus.Event;
 using Cojali.Shared.Domain.Bus.Query;
-using Users.Shared.HttpClient;
-using Users.Shared.Vehicles.Domain.Commands;
 using Users.Shared.Vehicles.Domain.Exceptions;
-using Users.Shared.Vehicles.Domain.Querys;
 using Users.Shared.Vehicles.Domain.Responses;
-using UsersManagement.Users.Domain;
-using UsersManagement.Users.Domain.ValueObject;
+using Users.Users.Domain;
+using Users.Users.Domain.ValueObject;
 
-namespace UsersManagement.Users.Application.Create;
+namespace Users.Users.Application.Create;
 
 public class UserInactiveCreator
 {

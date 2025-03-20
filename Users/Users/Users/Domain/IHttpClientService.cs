@@ -1,4 +1,4 @@
-namespace Users.Shared.HttpClient;
+namespace Users.Users.Domain;
 
 public interface IHttpClientService
 {

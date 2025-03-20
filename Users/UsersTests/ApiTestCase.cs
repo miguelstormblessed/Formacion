@@ -1,5 +1,5 @@
 ﻿using Moq;
-using Users.Shared.HttpClient;
+using Users.Users.Domain;
 
 namespace UsersTests;
 [Collection("Tests collection")]
