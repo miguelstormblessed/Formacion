@@ -16,4 +16,8 @@
       <PackageReference Include="MySqlConnector" Version="2.4.0" />
     </ItemGroup>
 
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+      <Exec Command="xcopy &quot;$(TargetDir)Users.dll&quot; &quot;$(SolutionDir)..\Libreria\&quot; /Y" />
+    </Target>
+
 </Project>

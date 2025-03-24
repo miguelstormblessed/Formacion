@@ -1,7 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Net;
+using Microsoft.AspNetCore.Mvc;
 using Users.Shared.Users.Domain.Exceptions;
 using Users.Shared.Users.Domain.Requests;
+using Users.Shared.Vehicles.Domain.Exceptions;
+using Users.Shared.Vehicles.Domain.Responses;
 using Users.Users.Application.Update;
+using Users.Users.Domain;
 using Users.Users.Domain.ValueObject;
 
 namespace UsersAPI.Controllers.Users.Update
@@ -12,10 +16,11 @@ namespace UsersAPI.Controllers.Users.Update
     public class UserUpdaterController : Controller
     {
         private readonly UserUpdater _userUpdater;
-
-        public UserUpdaterController(UserUpdater userUpdater)
+        private readonly IHttpClientService _httpClientService;
+        public UserUpdaterController(UserUpdater userUpdater, IHttpClientService httpClientService)
         {
             _userUpdater = userUpdater;
+            _httpClientService = httpClientService;
         }
 
         [HttpPut]
@@ -27,7 +32,17 @@ namespace UsersAPI.Controllers.Users.Update
                 UserName userName = UserName.Create(request.Name);
                 UserEmail userEmail = UserEmail.Create(request.Email);
                 UserState userState  = UserState.Create(request.State);
-                await _userUpdater.Execute(userId, userName, userEmail, userState, request.VehicleId);
+                
+                HttpResponseMessage vehicleHttpResponseMessage = await _httpClientService.GetAsync($"https://localhost:7239/VehicleFinder?id={request.VehicleId}");
+                if (vehicleHttpResponseMessage.StatusCode == HttpStatusCode.NotFound)
+                {
+                    throw new VehicleNotFoundException();
+                }
+
+                string content = vehicleHttpResponseMessage.Content.ReadAsStringAsync().Result;
+                VehicleResponse? vehicleResponse = VehicleResponse.FromJson(content);
+                
+                await _userUpdater.Execute(userId, userName, userEmail, userState, vehicleResponse);
                 return Ok();
             }
             catch (InvalidIdException e)

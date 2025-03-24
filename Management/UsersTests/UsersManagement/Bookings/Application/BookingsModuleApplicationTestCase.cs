@@ -53,10 +53,7 @@ public class BookingsModuleApplicationTestCase
         this.BookingRepository.Setup(b => b.GetBookingById(bookingId)).Returns(booking);
     }
 
-    protected async Task ShouldFindUserByHttp(HttpResponseMessage response)
-    {
-        HttpClientService.Setup(h => h.GetAsync(It.IsAny<string>())).ReturnsAsync(response);
-    }
+    
 
     protected void ShouldFindVehicle(VehicleFinderQuery query, VehicleResponse response)
     {
@@ -117,5 +114,10 @@ public class BookingsModuleApplicationTestCase
     protected void ShouldHaveCalledDispatchAsyncWithCorrectParametersOnce(UserUpdaterCommand command)
     {
         this.CommandBus.Verify(c => c.DispatchAsync(command), Times.Once);
+    }
+
+    protected void ShouldHaveCalledPatchWithCorrectParametersOnce(BookingStatus status, BookingId bookingId)
+    {
+        this.BookingRepository.Verify(b => b.Patch(status, bookingId), Times.Once);
     }
 }

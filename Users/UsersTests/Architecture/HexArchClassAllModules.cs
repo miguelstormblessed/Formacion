@@ -29,20 +29,22 @@ public class HexArchClassAllModules : ArchitectureTestCase
     [Fact]
     public void DomainSholdOnlyDependOnThemselveOrShared()
     {
-        CheckLayerDependencies(
+        List<string> errors = CheckLayerDependencies(
             "Domain",
             _filePathDomain,
             (module) => $"{_rootNamespace}\\.{module}\\.Domain(\\..+)?",
             (module, domainPattern) =>
                 Types().That().ResideInNamespace(domainPattern, true)
                     .Or().ResideInNamespace($"{_rootNamespace}\\.Shared(\\..+)?$", true)
-                    .Or().ResideInNamespace("System(\\..+)?$", true));
+                    .Or().ResideInNamespace("System(\\..+)?$", true)
+                );
+        errors.Should().BeEmpty();
     }
 
     [Fact]
     public void ApplicationShouldOnlyDependOnThemselveOrSharedOrDomain()
     {
-        CheckLayerDependencies(
+        List<string> errors = CheckLayerDependencies(
             "Aplication",
             _filePathApplication,
             (module) => $"{_rootNamespace}\\.{module}\\.Application(\\..+)?",
@@ -52,9 +54,9 @@ public class HexArchClassAllModules : ArchitectureTestCase
                     .Or().ResideInNamespace($"{_rootNamespace}\\.Shared(\\..+)?$", true)
                     .Or().ResideInNamespace("System(\\..+)?$", true)
         );
+        errors.Should().BeEmpty();
     }
-
-    private void CheckLayerDependencies(
+    private List<string> CheckLayerDependencies(
         string layerName,
         string outputFilePath,
         Func<string, string> getNamespacePattern,
@@ -90,8 +92,8 @@ public class HexArchClassAllModules : ArchitectureTestCase
         {
             AppendToFile(outputFilePath, $"No se han detectado violaciones de {layerName}");
         }
-        
-        errors.Should().BeEmpty();
+
+        return errors;
     }
     
     

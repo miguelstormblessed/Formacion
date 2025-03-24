@@ -20,7 +20,7 @@ public static class DockerDatabaseConfigsExtensions
     {
         if (string.IsNullOrEmpty(DockerConnectionStringProvider.ConnectionString))
         {
-            throw new InvalidOperationException("DockerStringProvider cannot be null or empty.");
+            throw new InvalidOperationException("Docker connection string cannot be null or empty.");
         }
         services.AddTransient<IDbConnection>(_ => new MySqlConnection(DockerConnectionStringProvider.ConnectionString));
     }

@@ -23,5 +23,8 @@ public class ApiTestCase
             _factory.Dispose();
         }
     }
-    
+    protected async Task ShouldFindUserByHttp(HttpResponseMessage response)
+    {
+        HttpClientService.Setup(h => h.GetAsync(It.IsAny<string>())).ReturnsAsync(response);
+    }
 }

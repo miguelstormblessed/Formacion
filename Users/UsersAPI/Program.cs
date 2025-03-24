@@ -71,9 +71,10 @@ builder.Services.AddScoped<IQueryBus, InMemoryQueryBus>();
 builder.Services.AddScoped<ICommandBus, InMemoryCommandBus>();
 
 builder.Services.AddDomainEventSubscribersServices(Assembly.GetAssembly(typeof(Usuario)));
-builder.Services.RegisterAssemblyPublicNonGenericClasses(typeof(ActivatedUserCreated).Assembly)
+builder.Services.RegisterAssemblyPublicNonGenericClasses(Assembly.Load("Users"))
     .Where(type => type.GetTypeInfo().ImplementedInterfaces.Select(i => 
         i.GetTypeInfo()).Any(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(IQueryHandler<,>))).AsPublicImplementedInterfaces();
+
 
 builder.Services.RegisterAssemblyPublicNonGenericClasses(Assembly.GetAssembly(typeof(Usuario)))
     .Where(type => type.GetTypeInfo().ImplementedInterfaces.Select(i => i.GetTypeInfo())

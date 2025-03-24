@@ -15,6 +15,8 @@ public interface IBookingRepository
     void Save(Booking booking);
     
     void Delete(BookingId bookingId);
-    
-    
+
+    void Patch(BookingStatus bookingStatus, BookingId bookingId);
+
+
 }

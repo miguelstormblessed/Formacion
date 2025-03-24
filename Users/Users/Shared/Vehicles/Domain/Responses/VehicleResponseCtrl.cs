@@ -2,12 +2,13 @@
 
 public class VehicleResponseCtrl
 {
-    public VehicleResponseCtrl(string color, string registrationNumber)
+    public VehicleResponseCtrl(string vehicleColor, string vehicleRegistration)
     {
-        Color = color;
-        RegistrationNumber = registrationNumber;
+        VehicleColor = vehicleColor;
+        VehicleRegistration = vehicleRegistration;
     }
 
-    public string Color { get; set; }
-    public string RegistrationNumber { get; set; }
+    public string VehicleColor { get; set; }
+    public string VehicleRegistration { get; set; }
+    
 }

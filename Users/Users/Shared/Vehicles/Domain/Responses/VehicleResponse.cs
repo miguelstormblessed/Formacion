@@ -32,14 +32,16 @@ public class VehicleResponse
 
     public static VehicleResponse? FromJson(string json)
     {
-        // var options = new JsonSerializerOptions();
-        ////options.Converters.Add(new JsonStringEnumConverter());
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+    
+        var jsonVehicle = JsonSerializer.Deserialize<JsonElement>(json, options);
 
-        var jsonVehicle = JsonSerializer.Deserialize<JsonElement>(json/*, options*/);
-
-        if (jsonVehicle.TryGetProperty("Id", out var idElement)
-            && jsonVehicle.TryGetProperty("VehicleRegistration", out var registrationElement) 
-            && jsonVehicle.TryGetProperty("VehicleColor", out var colorElement))
+        if (TryGetProperty(jsonVehicle, "Id", out var idElement)
+            && TryGetProperty(jsonVehicle,"VehicleRegistration", out var registrationElement) 
+            && TryGetProperty(jsonVehicle,"VehicleColor", out var colorElement))
         {
             string? id = idElement.GetString();
             string? registration = registrationElement.GetString();
@@ -49,6 +51,29 @@ public class VehicleResponse
         }
 
         return null;
+    }
+    
+    private static bool TryGetProperty(JsonElement element, string propertyName, out JsonElement value)
+    {
+        // Intentar obtener la propiedad directamente (usando la configuración insensible a mayúsculas/minúsculas)
+        if (element.TryGetProperty(propertyName, out value))
+        {
+            return true;
+        }
+
+        // Si no se encuentra, buscar en todas las propiedades de forma manual
+        foreach (var property in element.EnumerateObject())
+        {
+            if (string.Equals(property.Name, propertyName, StringComparison.OrdinalIgnoreCase))
+            {
+                value = property.Value;
+                return true;
+            }
+        }
+
+        // No se encontró la propiedad
+        value = default;
+        return false;
     }
     
 

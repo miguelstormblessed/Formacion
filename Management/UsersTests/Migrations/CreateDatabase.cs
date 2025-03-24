@@ -1,4 +1,5 @@
 ﻿using FluentMigrator;
+using UsersManagement.Bookings.Domain.ValueObject;
 using UsersManagement.Shared.Users.Domain.Responses;
 using UsersTests.UsersManagement.Shared.Users.Responses;
 
@@ -37,6 +38,14 @@ public class CreateDatabase : Migration
         this.Insert.IntoTable("user").Row(new { id = "0babdeec-c946-4042-a2cf-c2b452d5176d", name = "ñalsdjkf", email = "añlsdf@mail", state = true, vehicles = "" });
         this.Insert.IntoTable("vehicle").Row(new
             { id = "28548eac-8829-4275-b336-078e00e96f56", registration = "asñfj-001", color = "Red" });
+        this.Insert.IntoTable("booking").Row(new
+        {
+            id = "4902524d-f374-4a5d-bf7a-e1b008485e84",
+            bookingdate = "13/07/2030",
+            status = false,
+            vehicle = "28548eac-8829-4275-b336-078e00e96f56",
+            user = "0babdeec-c946-4042-a2cf-c2b452d5176d"
+        });
     }
 
     public override void Down()

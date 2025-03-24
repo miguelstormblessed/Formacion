@@ -27,7 +27,7 @@ public class VehicleFinderController : Controller
             VehicleId vehicleId = VehicleId.Create(id);
             Vehicle vehicle = this._vehicleFinder.Execute(vehicleId);
             VehicleResponseCtrl responseCtrl = new VehicleResponseCtrl(vehicle.VehicleColor.ToString(),
-                vehicle.VehicleRegistration.RegistrationValue);
+                vehicle.VehicleRegistration.RegistrationValue, vehicle.Id.IdValue);
             return Ok(responseCtrl);
         }
         catch (VehicleNotFoundException ex)

@@ -108,6 +108,7 @@ public class BookingCreatorControllerTest : ApiTestCase
             vehicleId,
             userId);
         
+        
         HttpResponseMessage mockResponse = new HttpResponseMessage(HttpStatusCode.OK);
         mockResponse.Content = new StringContent(JsonConvert.SerializeObject(userResponse));
     

@@ -3244,6 +3244,14 @@
           "UsersManagement.dll": {}
         }
       },
+      "Users/1.0.0.0": {
+        "runtime": {
+          "Users.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/8.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -6615,6 +6623,11 @@
     },
     "UsersManagement/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Users/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },

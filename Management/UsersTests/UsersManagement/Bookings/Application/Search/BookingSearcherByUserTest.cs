@@ -18,7 +18,7 @@ public class BookingSearcherByUserTest : BookingsModuleApplicationTestCase
 
     public BookingSearcherByUserTest()
     {
-        _bookingSearcherByUser = new BookingSearcherByUser(this.BookingRepository.Object, this.QueryBus.Object, this.HttpClientService.Object);
+        _bookingSearcherByUser = new BookingSearcherByUser(this.BookingRepository.Object, this.QueryBus.Object);
     }
 
     [Fact]
@@ -26,30 +26,11 @@ public class BookingSearcherByUserTest : BookingsModuleApplicationTestCase
     {
         // GIVEN
         UserResponse userResponse = UserResponseMother.CreateRandom();
-        HttpResponseMessage message = new HttpResponseMessage();
-        message.Content = new StringContent(JsonConvert.SerializeObject(userResponse));
-        message.StatusCode = HttpStatusCode.OK;
-        this.ShouldFindUserByHttp(message);
         string id = Guid.NewGuid().ToString();
         // WHEN
         await _bookingSearcherByUser.ExecuteAsync(id);
         // THEN
         this.ShouldHaveCalledGetAllBookingsByUserIdWithCorrectParametersOnce(id);
     }
-
-    [Fact]
-    public async Task ShouldThrowUserNotFoundException()
-    {
-        // GIVEN
-        UserResponse userResponse = UserResponseMother.CreateRandom();
-        HttpResponseMessage message = new HttpResponseMessage();
-        message.Content = new StringContent(JsonConvert.SerializeObject(userResponse));
-        message.StatusCode = HttpStatusCode.NotFound;
-        await this.ShouldFindUserByHttp(message);
-        string id = Guid.NewGuid().ToString();
-        // WHEN
-        var result = () =>  _bookingSearcherByUser.ExecuteAsync(id);
-        // THEN
-        await result.Should().ThrowAsync<UserNotFoundException>();
-    }
+    
 }

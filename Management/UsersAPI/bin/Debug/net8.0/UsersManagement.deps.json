@@ -50,6 +50,7 @@
           "MySqlConnector.DependencyInjection": "2.4.0",
           "Swashbuckle.AspNetCore": "7.2.0",
           "Testcontainers.MySql": "4.2.0",
+          "Users": "1.0.0.0",
           "Microsoft.AspNetCore.Antiforgery": "8.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "8.0.0.0",
           "Microsoft.AspNetCore.Authentication.BearerToken": "8.0.0.0",
@@ -1482,6 +1483,17 @@
         },
         "compile": {
           "lib/net8.0/ZstdSharp.dll": {}
+        }
+      },
+      "Users/1.0.0.0": {
+        "runtime": {
+          "Users.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "Users.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/8.0.0.0": {
@@ -3972,6 +3984,11 @@
       "sha512": "sha512-Z62eNBIu8E8YtbqlMy57tK3dV1+m2b9NhPeaYovB5exmLKvrGCqOhJTzrEUH5VyUWU6vwX3c1XHJGhW5HVs8dA==",
       "path": "zstdsharp.port/0.8.0",
       "hashPath": "zstdsharp.port.0.8.0.nupkg.sha512"
+    },
+    "Users/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/8.0.0.0": {
       "type": "referenceassembly",

@@ -26,7 +26,7 @@ public class BookingCreatorTest : BookingsModuleApplicationTestCase
 
     public BookingCreatorTest()
     {
-        _bookingCreator = new BookingCreator(this.BookingRepository.Object, this.QueryBus.Object, this.CommandBus.Object, this.HttpClientService.Object);
+        _bookingCreator = new BookingCreator(this.BookingRepository.Object, this.QueryBus.Object, this.CommandBus.Object);
     }
 
     [Fact]
@@ -35,10 +35,7 @@ public class BookingCreatorTest : BookingsModuleApplicationTestCase
         // GIVEN
         VehicleResponse vehicleResponse = VehicleResponseMother.CreateRandom();
         UserResponse userResponse = UserResponseMother.CreateRandom();
-        HttpResponseMessage message = new HttpResponseMessage();
-        message.Content = new StringContent(JsonConvert.SerializeObject(userResponse));
-        message.StatusCode = HttpStatusCode.OK;
-        await this.ShouldFindUserByHttp(message);
+       
         VehicleFinderQuery vehicleFinderQuery = VehicleFinderQuery.Create(vehicleResponse.Id);
         this.ShouldFindVehicle(vehicleFinderQuery, vehicleResponse);
         
@@ -46,7 +43,7 @@ public class BookingCreatorTest : BookingsModuleApplicationTestCase
         
         //this.ShouldReturnVehicleResponseThenUserResponse(vehicleFinderQuery, vehicleResponse, userFinderQuery, userResponse);
         // WHEN
-        await _bookingCreator.Execute(booking.Id, booking.Date, vehicleResponse.Id, userResponse.Id);
+        await _bookingCreator.Execute(booking.Id, booking.Date, vehicleResponse.Id, userResponse);
         // THEN
         this.SholdHaveCalledAskAsyncWithCorrectVehicleFinderQueryParametersOnce(vehicleFinderQuery);
     }
@@ -57,10 +54,7 @@ public class BookingCreatorTest : BookingsModuleApplicationTestCase
         // GIVEN
         VehicleResponse vehicleResponse = VehicleResponseMother.CreateRandom();
         UserResponse userResponse = UserResponseMother.CreateRandom();
-        HttpResponseMessage message = new HttpResponseMessage();
-        message.Content = new StringContent(JsonConvert.SerializeObject(userResponse));
-        message.StatusCode = HttpStatusCode.NotFound;
-        await this.ShouldFindUserByHttp(message);
+        
         VehicleFinderQuery vehicleFinderQuery = VehicleFinderQuery.Create(vehicleResponse.Id);
         this.ShouldFindVehicle(vehicleFinderQuery, vehicleResponse);
 
@@ -71,7 +65,7 @@ public class BookingCreatorTest : BookingsModuleApplicationTestCase
             userResponse
         );
         // WHEN
-        var resutl = () => _bookingCreator.Execute(booking.Id, booking.Date, vehicleResponse.Id, userResponse.Id);
+        var resutl = () => _bookingCreator.Execute(booking.Id, booking.Date, vehicleResponse.Id, userResponse);
         // THEN
         resutl.Should().ThrowAsync<UserNotFoundException>();
     }
@@ -82,11 +76,6 @@ public class BookingCreatorTest : BookingsModuleApplicationTestCase
         VehicleResponse vehicleResponse = VehicleResponseMother.CreateRandom();
         UserResponse userResponse = UserResponseMother.CreateRandom();
         
-        HttpResponseMessage message = new HttpResponseMessage();
-        message.Content = new StringContent(JsonConvert.SerializeObject(userResponse));
-        message.StatusCode = HttpStatusCode.OK;
-        await this.ShouldFindUserByHttp(message);
-        
         VehicleFinderQuery vehicleFinderQuery = VehicleFinderQuery.Create(vehicleResponse.Id);
         this.ShouldFindVehicle(vehicleFinderQuery, vehicleResponse);
 
@@ -97,7 +86,7 @@ public class BookingCreatorTest : BookingsModuleApplicationTestCase
             userResponse
         );
         // WHEN
-        await _bookingCreator.Execute(booking.Id, booking.Date, vehicleResponse.Id, userResponse.Id);
+        await _bookingCreator.Execute(booking.Id, booking.Date, vehicleResponse.Id, userResponse);
         // THEN
         this.ShouldHaveCalledSaveWithCorrectParametersOnce(booking);
     }

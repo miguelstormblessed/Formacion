@@ -13,30 +13,27 @@ public class BookingSearcherByUser
 {
     private readonly IBookingRepository _bookingRepository;
     private readonly IQueryBus _queryBus;
-    private readonly IHttpClientService _client;
 
-    public BookingSearcherByUser(IBookingRepository bookingRepository, IQueryBus queryBus, IHttpClientService client)
+    public BookingSearcherByUser(IBookingRepository bookingRepository, IQueryBus queryBus)
     {
         _bookingRepository = bookingRepository;
         _queryBus = queryBus;
-        _client = client;
     }
 
     public async Task<IEnumerable<Booking>> ExecuteAsync(string userId)
     {
-        var result = await _client.GetAsync($"https://localhost:7172/UserFinder?id={userId}");
+        /*var result = await _client.GetAsync($"https://localhost:7172/UserFinder?id={userId}");
         CheckStatusCode(result);
-        var content = result.Content.ReadAsStringAsync().Result;
+        var content = result.Content.ReadAsStringAsync().Result;*/
         
-        UserResponse userResponse = UserResponse.FromJson(content);
+        //UserFinderQuery userFinderQuery = UserFinderQuery.Create(userId);
+        //UserResponse userResponse = await this._queryBus.AskAsync(userFinderQuery);
+        /*if (userResponse == null)
+        {
+            throw new UserNotFoundException();
+        }*/
         return await _bookingRepository.Search(new BookingByUserIdSpecification(userId));
     }
 
-    private void CheckStatusCode(HttpResponseMessage response)
-    {
-        if (response.StatusCode == HttpStatusCode.NotFound)
-        {
-            throw new UserNotFoundException();
-        }
-    }
+    
 }

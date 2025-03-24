@@ -2,11 +2,12 @@
 using System.Net.Http.Json;
 using Bogus.DataSets;
 using FluentAssertions;
+using Newtonsoft.Json;
 using Users.Shared.Users.Domain.Requests;
 using Users.Shared.Vehicles.Domain.Responses;
 using Users.Users.Domain;
-using UsersTests.Shared.Vehicles.Domain.Responses;
-using UsersTests.Users.Domain;
+using UsersTests.Users.Shared.Vehicles.Domain.Responses;
+using UsersTests.Users.Users.Domain;
 
 namespace UsersTests.UsersAPI.Create;
 [Collection("Tests collection")]
@@ -51,6 +52,11 @@ public class UserInactiveCreatorControllerTest : ApiTestCase
             user.Name.Name,
             user.Email.Email,
             vehicle.Id);
+        
+        HttpResponseMessage mockResponse = new HttpResponseMessage(HttpStatusCode.OK);
+        mockResponse.Content = new StringContent(JsonConvert.SerializeObject(vehicle));
+
+        this.ShouldFindVehicleByHttp(mockResponse);
         // WHEN
         
         HttpResponseMessage response = await this.HttpClient.PostAsJsonAsync("/UserInactiveCreator", request);

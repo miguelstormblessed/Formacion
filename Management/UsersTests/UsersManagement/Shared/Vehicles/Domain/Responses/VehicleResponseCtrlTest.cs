@@ -12,10 +12,11 @@ public class VehicleResponseCtrlTest
         // GIVEN
         string color = VehicleColorMother.CreateRandom().Value.ToString();
         string number = VehicleRegistrationMother.CreateRandom().RegistrationValue;
+        string id = Guid.NewGuid().ToString();
         // WHEN
-        VehicleResponseCtrl response = new VehicleResponseCtrl(color, number);
+        VehicleResponseCtrl response = new VehicleResponseCtrl(color, number, id);
         // THEN
-        response.Color.Should().Be(color);
-        response.RegistrationNumber.Should().Be(number);
+        response.VehicleColor.Should().Be(color);
+        response.VehicleRegistration.Should().Be(number);
     }
 }

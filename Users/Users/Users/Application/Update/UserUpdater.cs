@@ -15,18 +15,16 @@ public class UserUpdater
     private readonly UserFinder _userFinder;
     private readonly IEventBus _eventBus;
     private readonly IQueryBus _queryBus;
-    private readonly IHttpClientService _httpClientService;
 
-    public UserUpdater(IUserRepository userRepository, UserFinder userFinder, IEventBus eventBus, IQueryBus queryBus, IHttpClientService httpClientService)
+    public UserUpdater(IUserRepository userRepository, UserFinder userFinder, IEventBus eventBus, IQueryBus queryBus)
     {
         this._userRepository = userRepository;
         this._userFinder = userFinder;
         this._eventBus = eventBus;
         this._queryBus = queryBus;
-        this._httpClientService = httpClientService;
     }
 
-    public async Task Execute(UserId userId, UserName newUserName, UserEmail newUserEmail, UserState newUserState, string? vehicleId)
+    public async Task Execute(UserId userId, UserName newUserName, UserEmail newUserEmail, UserState newUserState, VehicleResponse? vehicleResponse)
     {
         Usuario user = this._userFinder.Execute(userId);
         /*VehicleResponse? vehicle = null;
@@ -35,16 +33,16 @@ public class UserUpdater
             vehicle = await this._queryBus.AskAsync(VehicleFinderQuery.Create(vehicleId));
         }*/
         
-        HttpResponseMessage response =
+        /*HttpResponseMessage response =
             await this._httpClientService.GetAsync($"https://localhost:7239/VehicleFinder?id={vehicleId}");
         if (response.StatusCode == HttpStatusCode.NotFound)
         {
             throw new VehicleNotFoundException();
         }
         
-        VehicleResponse? vehicle = VehicleResponse.FromJson(response.Content.ReadAsStringAsync().Result);
+        VehicleResponse? vehicle = VehicleResponse.FromJson(response.Content.ReadAsStringAsync().Result);*/
 
-        user.Update(userId, newUserName, newUserEmail, newUserState, vehicle);
+        user.Update(userId, newUserName, newUserEmail, newUserState, vehicleResponse);
         
         _userRepository.Update(user);
         //await this._eventBus.PublishAsync(user.PullDomainEvents());

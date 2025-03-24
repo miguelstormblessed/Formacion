@@ -28,9 +28,7 @@ public class BookingDeleter
             booking.UserResponse.Email,
             booking.UserResponse.State,
             null);
-        //booking?.Delete();
         this._bookingRepository.Delete(bookingId);
-        //this._eventBus.PublishAsync(booking?.PullDomainEvents());
         
         this._commandBus.DispatchAsync(userUpdaterCommand);
         

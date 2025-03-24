@@ -10,50 +10,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc5ff72-b2b1-41b3-865e-b85ad6ef5b5f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Users/UsersTests/Architecture/ApplicationTestResults.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Users/UsersTests/Architecture/DomainTestResults.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Users/UsersTests/Architecture/HexArchClassAllModules.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Users/UsersTests/TestCoverage/FactResults.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Users/UsersTests/TestCoverage/TestCoverageResults.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Users/UsersTests/TestCoverage/TestCoverageTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Cancel/BookingCancellerController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UsersManagement/Bookings/Application/Cancel/BookingCanceller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UsersManagement/Shared/Bookings/Domain/Requests/BookingCancellerRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Cancel/BookingCancellerControllerTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UsersTests/UsersManagement/Bookings/Application/Cancel/BookingCancellerTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.pruebaTecnica/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pruebaTecnica/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Create/BookingCreatorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Create/BookingCreatorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Search/BookingSearcherByUserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Search/BookingSearcherByUserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersAPI/Controllers/Vehicles/Find/VehicleFinderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/Controllers/Vehicles/Find/VehicleFinderController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersAPI/Controllers/Vehicles/Search/VehicleSearcherController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/Controllers/Vehicles/Search/VehicleSearcherController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersAPI/UsersAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/UsersAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersManagement.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersManagement.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersManagement.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersManagement.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/bin/Debug/net8.0/UsersManagement.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/UsersAPI.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/ref/UsersAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/ref/UsersAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/refint/UsersAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersAPI/obj/Debug/net8.0/refint/UsersAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersManagement/Bookings/Application/Create/BookingCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/Bookings/Application/Create/BookingCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersManagement/Bookings/Application/Delete/BookingDeleter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/Bookings/Application/Delete/BookingDeleter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersManagement/Bookings/Application/Search/BookingSearcherByUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/Bookings/Application/Search/BookingSearcherByUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersManagement/Bookings/Domain/IBookingRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/Bookings/Domain/IBookingRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersManagement/Bookings/Infrastructure/BookingRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/Bookings/Infrastructure/BookingRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersManagement/Shared/Users/Domain/Responses/UserResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/Shared/Users/Domain/Responses/UserResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersManagement/Shared/Vehicles/Domain/Responses/VehicleResponseCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/Shared/Vehicles/Domain/Responses/VehicleResponseCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersManagement/UsersManagement.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/UsersManagement.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersManagement/Vehicles/Infrastructure/VehicleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/Vehicles/Infrastructure/VehicleRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersManagement/bin/Debug/net8.0/UsersManagement.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/bin/Debug/net8.0/UsersManagement.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersManagement/bin/Debug/net8.0/UsersManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/bin/Debug/net8.0/UsersManagement.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersManagement/bin/Debug/net8.0/UsersManagement.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/bin/Debug/net8.0/UsersManagement.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/UsersManagement.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/ref/UsersManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/ref/UsersManagement.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/refint/UsersManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/obj/Debug/net8.0/refint/UsersManagement.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Architecture/ApplicationTestResults.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Architecture/ApplicationTestResults.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Architecture/DomainTestResults.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Architecture/DomainTestResults.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/Architecture/HexArchClassAllModules.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Architecture/HexArchClassAllModules.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersTests/CQRS/CQRSAllModules.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/CQRS/CQRSAllModules.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/ApiTestCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/ApiTestCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/Migrations/CreateDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/Migrations/CreateDatabase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/TestCoverage/TestCoverageResults.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/TestCoverage/TestCoverageResults.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/TestCoverage/TestCoverageTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/TestCoverage/TestCoverageTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/UsersManagement/Bookings/Application/BookingsModuleApplicationTestCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/UsersManagement/Bookings/Application/BookingsModuleApplicationTestCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/UsersManagement/Bookings/Application/Create/BookingCreatorTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/UsersManagement/Bookings/Application/Create/BookingCreatorTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/UsersManagement/Bookings/Application/Search/BookingSearcherByUserTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/UsersManagement/Bookings/Application/Search/BookingSearcherByUserTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/UsersManagement/Shared/Vehicles/Domain/Responses/VehicleResponseCtrlTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/UsersManagement/Shared/Vehicles/Domain/Responses/VehicleResponseCtrlTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersAPI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersAPI.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersAPI.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersManagement.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersManagement.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersManagement.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersManagement.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersManagement.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersTests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersTests.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersTests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/bin/Debug/net8.0/UsersTests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/UsersTests/obj/Debug/net8.0/UsersTests.sourcelink.json" afterDir="false" />
@@ -62,34 +94,17 @@
       <change beforePath="$PROJECT_DIR$/pruebaTecnica.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/pruebaTecnica.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/.idea/.idea.Users/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/.idea/.idea.Users/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/Users.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Shared/HttpClient/HttpClientService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Infrastructure/HttpClientService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Shared/HttpClient/IHttpClientService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Domain/IHttpClientService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/Users/Shared/Vehicles/Domain/Responses/VehicleResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Shared/Vehicles/Domain/Responses/VehicleResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/Users/Shared/Vehicles/Domain/Responses/VehicleResponseCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Shared/Vehicles/Domain/Responses/VehicleResponseCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/Users/Users.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Application/Create/UserActiveCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Application/Create/UserActiveCreator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Application/Create/UserInactiveCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Application/Create/UserInactiveCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Application/Delete/UserDeleter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Application/Delete/UserDeleter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Application/Find/UserFinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Application/Find/UserFinder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Application/Find/UserFinderQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Application/Find/UserFinderQueryHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Application/Search/UserSearcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Application/Search/UserSearcher.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Application/Update/UserUpdater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Application/Update/UserUpdater.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Application/Update/UserUpdaterCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Application/Update/UserUpdaterCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Application/Update/UserUpdaterOnBookingCreated.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Application/Update/UserUpdaterOnBookingCreated.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Application/Update/UserUpdaterOnBookingDeleted.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Application/Update/UserUpdaterOnBookingDeleted.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Domain/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Domain/IUserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Domain/Usuario.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Domain/Usuario.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Domain/ValueObject/UserEmail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Domain/ValueObject/UserEmail.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Domain/ValueObject/UserId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Domain/ValueObject/UserId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Domain/ValueObject/UserName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Domain/ValueObject/UserName.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Domain/ValueObject/UserState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Domain/ValueObject/UserState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Infrastructure/Mappers/UserEmailMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Infrastructure/Mappers/UserEmailMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Infrastructure/Mappers/UserIdMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Infrastructure/Mappers/UserIdMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Infrastructure/Mappers/UserNameMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Infrastructure/Mappers/UserNameMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Infrastructure/Mappers/UserStateMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Infrastructure/Mappers/UserStateMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/Users/Infrastructure/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/Users/Infrastructure/UserRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/Users/bin/Debug/net8.0/Users.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/bin/Debug/net8.0/Users.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/Users/bin/Debug/net8.0/Users.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/bin/Debug/net8.0/Users.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/Users/obj/Debug/net8.0/Users.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/obj/Debug/net8.0/Users.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/Users/obj/Debug/net8.0/Users.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/obj/Debug/net8.0/Users.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/Users/obj/Debug/net8.0/Users.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/obj/Debug/net8.0/Users.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/Users/obj/Debug/net8.0/Users.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/obj/Debug/net8.0/Users.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/Users/obj/Debug/net8.0/Users.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/obj/Debug/net8.0/Users.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/Users/obj/Debug/net8.0/Users.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/Users/obj/Debug/net8.0/Users.sourcelink.json" afterDir="false" />
@@ -98,9 +113,6 @@
       <change beforePath="$PROJECT_DIR$/../Users/UsersAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersAPI/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersAPI/Users/Create/UserActiveCreatorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersAPI/Users/Create/UserActiveCreatorController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersAPI/Users/Create/UserInactiveCreatorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersAPI/Users/Create/UserInactiveCreatorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersAPI/Users/Delete/UserDeleterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersAPI/Users/Delete/UserDeleterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersAPI/Users/Find/UserFinderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersAPI/Users/Find/UserFinderController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersAPI/Users/Search/UserSearcherController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersAPI/Users/Search/UserSearcherController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersAPI/Users/Update/UserUpdaterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersAPI/Users/Update/UserUpdaterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersAPI/bin/Debug/net8.0/Users.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersAPI/bin/Debug/net8.0/Users.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersAPI/bin/Debug/net8.0/Users.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersAPI/bin/Debug/net8.0/Users.pdb" afterDir="false" />
@@ -116,34 +128,60 @@
       <change beforePath="$PROJECT_DIR$/../Users/UsersAPI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersAPI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersAPI/obj/Debug/net8.0/ref/UsersAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersAPI/obj/Debug/net8.0/ref/UsersAPI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersAPI/obj/Debug/net8.0/refint/UsersAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersAPI/obj/Debug/net8.0/refint/UsersAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/ApiTestCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/ApiTestCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/ArchitectureTestCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/ArchitectureTestCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/TestWebApplicationFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/TestWebApplicationFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Create/UserActiveCreatorTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Create/UserActiveCreatorTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Create/UserInactiveCreatorTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Create/UserInactiveCreatorTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Delete/UserDeleterTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Delete/UserDeleterTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Find/UserFinderTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Find/UserFinderTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Search/UserSearcherTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Search/UserSearcherTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Update/UserUpdaterTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Update/UserUpdaterTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/UserModuleApplicationUnitTestCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/UserModuleApplicationUnitTestCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/UserMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/UserMother.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/UsuarioTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/UsuarioTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserEmailMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserEmailMother.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserEmailTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserEmailTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserIdMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserIdMother.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserIdTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserIdTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserNameMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserNameMother.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserNameTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserNameTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserStateMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserStateMother.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserStateTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserStateTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Infraestructure/UserModuleInfraestructureTestCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Infraestructure/UserModuleInfraestructureTestCase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Infraestructure/UserRepositoryTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Infraestructure/UserRepositoryTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Configuration/CreateDatabaseFixture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Configuration/CreateDatabaseFixture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Architecture/HexArchClassAllModules.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Architecture/HexArchClassAllModules.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Bookings/Domain/Requests/BookingRequestCtrlTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Bookings/Domain/Requests/BookingRequestCtrlTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Bookings/Domain/Requests/BookingRequestMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Bookings/Domain/Requests/BookingRequestMother.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Bookings/Domain/Responses/BookingResponseCtrlTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Bookings/Domain/Responses/BookingResponseCtrlTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Bookings/Domain/Responses/BookingResponseMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Bookings/Domain/Responses/BookingResponseMother.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Counters/Domain/Responses/CountResponseTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Counters/Domain/Responses/CountResponseTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Senders/Domain/Requests/SenderRequestMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Senders/Domain/Requests/SenderRequestMother.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Senders/Domain/Requests/SenderRequestTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Senders/Domain/Requests/SenderRequestTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Users/DomainEvents/ActivatedUserCreatedTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Users/DomainEvents/ActivatedUserCreatedTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Users/DomainEvents/InactiveUserCreatedTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Users/DomainEvents/InactiveUserCreatedTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Users/DomainEvents/UserDeletedTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Users/DomainEvents/UserDeletedTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Users/DomainEvents/UserUpdatedTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Users/DomainEvents/UserUpdatedTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Users/Requests/UserRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Users/Requests/UserRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Users/Requests/UserUpdaterRequestTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Users/Requests/UserUpdaterRequestTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Users/Responses/UserResponseCtrlTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Users/Responses/UserResponseCtrlTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Users/Responses/UserResponseMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Users/Responses/UserResponseMother.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Users/Responses/UserResponseTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Users/Responses/UserResponseTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Vehicles/Domain/Commands/VehicleCreatorCommandTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Vehicles/Domain/Commands/VehicleCreatorCommandTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Vehicles/Domain/Querys/VehicleFinderQueryTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Vehicles/Domain/Querys/VehicleFinderQueryTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Vehicles/Domain/Requests/VehicleRequestTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Vehicles/Domain/Requests/VehicleRequestTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Vehicles/Domain/Responses/VehicleResponseCtrlTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Vehicles/Domain/Responses/VehicleResponseCtrlTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Vehicles/Domain/Responses/VehicleResponseMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Vehicles/Domain/Responses/VehicleResponseMother.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Shared/Vehicles/Domain/Responses/VehicleResponseTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Shared/Vehicles/Domain/Responses/VehicleResponseTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Create/UserActiveCreatorTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Application/Create/UserActiveCreatorTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Create/UserInactiveCreatorTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Application/Create/UserInactiveCreatorTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Delete/UserDeleterTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Application/Delete/UserDeleterTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Find/UserFinderQueryHandlerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Application/Find/UserFinderQueryHandlerTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Find/UserFinderTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Application/Find/UserFinderTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Search/UserSearcherTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Application/Search/UserSearcherTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Update/UserUpdaterCommandHandlerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Application/Update/UserUpdaterCommandHandlerTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Update/UserUpdaterOnBookingCreatedTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Application/Update/UserUpdaterOnBookingCreatedTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Update/UserUpdaterOnBookingDeletedTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Application/Update/UserUpdaterOnBookingDeletedTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/Update/UserUpdaterTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Application/Update/UserUpdaterTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Application/UserModuleApplicationUnitTestCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Application/UserModuleApplicationUnitTestCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/IUserRepositoryTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Domain/IUserRepositoryTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/UserMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Domain/UserMother.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/UsuarioTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Domain/UsuarioTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserEmailMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Domain/ValueObject/UserEmailMother.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserEmailTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Domain/ValueObject/UserEmailTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserIdMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Domain/ValueObject/UserIdMother.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserIdTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Domain/ValueObject/UserIdTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserNameMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Domain/ValueObject/UserNameMother.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserNameTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Domain/ValueObject/UserNameTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserStateMother.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Domain/ValueObject/UserStateMother.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Domain/ValueObject/UserStateTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Domain/ValueObject/UserStateTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Infraestructure/UserModuleInfraestructureTestCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Infraestructure/UserModuleInfraestructureTestCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/Users/Infraestructure/UserRepositoryTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/Users/Users/Infraestructure/UserRepositoryTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Configuration/DockerDatabaseConfigsExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Configuration/DockerDatabaseConfigsExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Create/UserActiveCreatorControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Create/UserActiveCreatorControllerTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Create/UserInactiveCreatorControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Create/UserInactiveCreatorControllerTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Delete/UserDeleterControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Delete/UserDeleterControllerTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Find/UserFinderControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Find/UserFinderControllerTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Update/UserUpdaterControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/UsersAPI/Update/UserUpdaterControllerTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/UsersTests/UsersTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/UsersTests.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/obj/Debug/net8.0/UsersTests.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/UsersTests/obj/Debug/net8.0/UsersTests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/UsersTests/obj/Debug/net8.0/UsersTests.csproj.AssemblyReference.cache" afterDir="false" />
@@ -174,12 +212,64 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/115de21be8e649c2b40ba2e6a07f0e668000/33/351b3417/IQueryHandler`2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/115de21be8e649c2b40ba2e6a07f0e668000/45/0b5c3853/IQueryBus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/115de21be8e649c2b40ba2e6a07f0e668000/fc/3be60317/QueryNotRegisteredError.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/36e8baa155f548e480319bf52aa7cdf1de00/19/5972594f/QueryHandlerWrapper`2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/36e8baa155f548e480319bf52aa7cdf1de00/51/a3fe9b89/InMemoryQueryBus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/36e8baa155f548e480319bf52aa7cdf1de00/9b/5ade978e/QueryHandlerWrapper`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/36e8baa155f548e480319bf52aa7cdf1de00/bc/187cca4c/InMemoryEventBusExtension.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/620f6e7eba834c42a2f2db6b22950df6531838/09/9a58a8d5/Activator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/620f6e7eba834c42a2f2db6b22950df6531838/5d/ed7d7afb/Type.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/636dbf197cb8487398aaef26e45e6a54ac00/dc/2c29d325/UserFinderQueryHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/636dbf197cb8487398aaef26e45e6a54ac00/f9/aab5c19d/UserResponse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/636dbf197cb8487398aaef26e45e6a54ac00/fa/f11cef1c/HttpClientService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7460a85b705e40269427ca1e12e5dd54aa00/82/aa192715/AutoRegisterExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7460a85b705e40269427ca1e12e5dd54aa00/98/2e90bfde/AutoRegisterData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/77b066cceabc4b61bb889995a5b8834ab000/51/97bc155e/Usuario.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ff6a4e819f424b80aa339b379172970e124648/06/48277c76/MySqlConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/13908fd38fb99d9eef4e835a9f9e326984c9245486de75d618866fc27eb51f1b/DependencyInjectionEventSource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/13e79b2a7b78394ccf591d3454bff5bfb14e692da011a7e38b66c2312b365a/String.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1872d14a3bdc3910f1c2e078187c9b5dc02b54534513cbb68deee3b61534e36f/ServiceIdentifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1d082abe6f82876736a285281e9af7ac5fba237acea3ba4deec4de9ae9b3b2/Interlocked.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f1e8153e25ec5e19739b45da84861aa743db6bb9dea25d7e7fda11cfaf6a5/Assembly.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/36f346b6c0454bc8a6afa7aed38119fe5bbffcc983298d9bfa4dbd5f49461f/Monitor.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3751f63369d883c5ea470ed57be8df2515b62dde23c49b86e1bbaf8c27b/CallSiteRuntimeResolver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3791ade316feeb2be344648da3c7d31719ff492f7733b643bf8c24d7629883/RuntimeType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/394cf11a64687141fd58fb926ff8b3d5a299eba3bbadaf2de9b93928d523d4/Type.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/58bfdf18a94174e1cb58659b676cd5bd1e102f96a0882418b1ff9cf0227464b/Activator.RuntimeType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6f90c6c13479b8c2a5be98f3d75dfc3bd885a055652d8a32904ca2448132949e/Future.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/767db1e17d404f86c3c73c54c6b20b5ff9ec43b79ef47681ae34b40a6852cf9/Where.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76821a72a92b7f845e9ad7971cab05798f9ee63882d2a7f4246a24c6e7e5f/SR.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7c2bae03aa44bbf7c7042e65efcf71cc97ecb2230ce25698f205e481c3147/StackGuard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d81b2d4f22bee75e5438c707251ae43cb0974c207db91ffc159118c84b4eb9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7fcc41fe48c43f71d1476329de953fce8565fcc5dbf3c8c6fdb81c216b19c4/ArgumentNullException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8d42d5f1712377031e2892d1c29db5c23b8c7d49b9dc632fbf463bd930a8/RuntimeHelpers.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8e2e3f232b3f74cfc56d24ec307aaea234eb831ec23796f1b454eb7e8fe1/CallSiteVisitor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/91abc4166178b9b99c19be91cb4694134796b4fc03a296e7ac0eb2ae6551b6b/DynamicServiceProviderEngine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/955ec549fe664629353c3b5424b6ad6c7dfcec4ab59bae709ab962c228cf45/RuntimeType.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9a6b1457cbcf17db31a383ba49ef9bcc786cf3ef77146d997eee499b27a46d/Object.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9e6ecf3790a24c43487ae724bf9ea8185bdedaf6c28da376d6ea862e66453/WebApplicationBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a794eaddcb9bfbe58f385286f14894948d4083476d90072dd5a3235d8bc461d/ConcurrentDictionary.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b0b0c4a2151d399b735ee25ece57ad68175a5c695936bef89d53e293f47c75/Component.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b2b836b4a16ec2a5a76cf2a2296c92cb3f2c47f84ea33e8755011472abb89/Assembly.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c092928882a17a51a62a367685d90a0a613eb91fb453b9f50147e19c1f3ff40/NullReferenceException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c36d13f0b3885e74da62a4b98eaf53f17f16fbc381cc731e3502685e372bae2/SR.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c439425da351c75ac7d966a1cc8324b51a9c471865af79d2f2f3fcb65e392/HttpClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c6a1dffd9d97a856f1c476918b1a52aba81da1bd4bbc22f1a2af5dddd7d32d/MySqlConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d841a3bc687f27ee984617d6831112761525e6278aaa3d7e75c62efa6a9f68/Regex.Cache.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ddd2e1cb86715125e6335e396ef8b489dcb4f23f331df3e2ba8fb969091bd/Regex.Match.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/de8c9d9014ed8851ff8db88744302e50dddf33c626b751126f43a9cbb5ef7b6/HttpClientJsonExtensions.Post.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UsersManagement/bin/Debug/net8.0/UsersManagement.deps.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e74c29b9b88b6bc79d45c8ecf5f99fb6781203f77d1554ecb64e2d022ab6d4a/GC.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e7dbd6fe331ff9a3c4b24dd470ec1f19a71b7c5acf258b81ae7f761cd2b319b/Type.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ead6614bb1135d7d61e33ab3a33f17abb3e4f07240e1ae2f5641235738ab7/ServiceProviderEngineScope.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f07c4f8f34cd4f537087d6d44f56ebc897c9fd7565d15d8724cbd928495cc29/EventSource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f5d6ea4b6bfbfffd9fcd22e9740669aad3a37725b65b2c48fbfcff6165ce8e/SqlMapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f7e838f3c047ee76488fa4c2b9b1bffb2b33b04a2780de4664de937e024e97/CallSiteFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Users/Users/Shared/Users/Domain/DomainEvents/ActivatedUserCreated.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/miguel.picazo/Desktop/Formación/Users/Users/Shared/Users/Domain/DomainEvents/ActivatedUserCreated.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Users/Users/Users/Application/Find/UserFinder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Users/Users/Users/Domain/ValueObject/UserId.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Users/Users/Users/Infrastructure/UserRepository.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -193,28 +283,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.UsersAPI: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.UsersAPI: https.executor": "Run",
-    "04e062ab-7d83-4133-8ec3-c263416eaebc.executor": "Debug",
-    "15af86ed-76bc-4774-80d4-97e27c690352.executor": "Debug",
-    "359d5cda-c00c-4805-8888-fde6338c65ef.executor": "Debug",
-    "37917480-2c7b-4e60-8389-b66ceb0f021d.executor": "Debug",
-    "78f33b57-847c-4a11-bd5a-cac49e408046.executor": "Debug",
-    "95af81a6-7c52-4361-90df-85bc1a395732.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "ce3e8dd8-0dd3-46cd-8c8f-05b9126cfb6f.executor": "Debug",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.UsersAPI: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.UsersAPI: https.executor&quot;: &quot;Debug&quot;,
+    &quot;04e062ab-7d83-4133-8ec3-c263416eaebc.executor&quot;: &quot;Debug&quot;,
+    &quot;15af86ed-76bc-4774-80d4-97e27c690352.executor&quot;: &quot;Debug&quot;,
+    &quot;359d5cda-c00c-4805-8888-fde6338c65ef.executor&quot;: &quot;Debug&quot;,
+    &quot;37917480-2c7b-4e60-8389-b66ceb0f021d.executor&quot;: &quot;Debug&quot;,
+    &quot;52b73c8d-eef4-40c7-a1bb-5aa3e89e8efb.executor&quot;: &quot;Debug&quot;,
+    &quot;78f33b57-847c-4a11-bd5a-cac49e408046.executor&quot;: &quot;Debug&quot;,
+    &quot;95af81a6-7c52-4361-90df-85bc1a395732.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;ac04920d-b1d4-4c71-a664-76d73d5872d2.executor&quot;: &quot;Debug&quot;,
+    &quot;ce3e8dd8-0dd3-46cd-8c8f-05b9126cfb6f.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;grid.search.filter.rows&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.UsersAPI: https">
     <configuration name="UsersAPI: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/UsersAPI/UsersAPI.csproj" />
@@ -274,7 +367,13 @@
       <workItem from="1742214379839" duration="12561000" />
       <workItem from="1742281463403" duration="25729000" />
       <workItem from="1742368460281" duration="7938000" />
-      <workItem from="1742454250958" duration="4164000" />
+      <workItem from="1742454250958" duration="11810000" />
+      <workItem from="1742540643744" duration="10748000" />
+      <workItem from="1742551459568" duration="1580000" />
+      <workItem from="1742553057226" duration="564000" />
+      <workItem from="1742553627508" duration="43000" />
+      <workItem from="1742553675037" duration="8306000" />
+      <workItem from="1742799812952" duration="17936000" />
     </task>
     <task id="LOCAL-00001" summary="user extrated to new bounded context. tests fixed in usermagagment bounded context">
       <option name="closed" value="true" />
@@ -389,250 +488,68 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Search/BookingSearcherByUser.cs</url>
-          <line>26</line>
+          <line>24</line>
           <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Search\BookingSearcherByUser.cs" containingFunctionPresentation="Method 'ExecuteAsync'">
             <startOffsets>
-              <option value="913" />
+              <option value="813" />
             </startOffsets>
             <endOffsets>
-              <option value="999" />
+              <option value="899" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Search/BookingSearcherByUser.cs</url>
-          <line>27</line>
+          <line>25</line>
           <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Search\BookingSearcherByUser.cs" containingFunctionPresentation="Method 'ExecuteAsync'">
             <startOffsets>
-              <option value="1008" />
+              <option value="908" />
             </startOffsets>
             <endOffsets>
-              <option value="1032" />
+              <option value="932" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Search/BookingSearcherByUser.cs</url>
-          <line>28</line>
+          <line>26</line>
           <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Search\BookingSearcherByUser.cs" containingFunctionPresentation="Method 'ExecuteAsync'">
             <startOffsets>
-              <option value="1041" />
+              <option value="941" />
             </startOffsets>
             <endOffsets>
-              <option value="1097" />
+              <option value="997" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Search/BookingSearcherByUser.cs</url>
-          <line>30</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Search\BookingSearcherByUser.cs" containingFunctionPresentation="Method 'ExecuteAsync'">
-            <startOffsets>
-              <option value="1115" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1174" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/UsersTests/UsersManagement/Bookings/Application/Search/BookingSearcherByUserTest.cs</url>
           <line>27</line>
           <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersManagement\Bookings\Application\Search\BookingSearcherByUserTest.cs" containingFunctionPresentation="Method 'ShouldCallGetAllBookingsByUserId'">
             <startOffsets>
-              <option value="965" />
+              <option value="934" />
             </startOffsets>
             <endOffsets>
-              <option value="1027" />
+              <option value="996" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/UsersTests/UsersManagement/Bookings/Application/Search/BookingSearcherByUserTest.cs</url>
-          <line>28</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersManagement\Bookings\Application\Search\BookingSearcherByUserTest.cs" containingFunctionPresentation="Method 'ShouldCallGetAllBookingsByUserId'">
-            <startOffsets>
-              <option value="1036" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1092" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersTests/UsersManagement/Bookings/Application/Search/BookingSearcherByUserTest.cs</url>
-          <line>29</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersManagement\Bookings\Application\Search\BookingSearcherByUserTest.cs" containingFunctionPresentation="Method 'ShouldCallGetAllBookingsByUserId'">
-            <startOffsets>
-              <option value="1101" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1180" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersTests/UsersManagement/Bookings/Application/Search/BookingSearcherByUserTest.cs</url>
           <line>30</line>
           <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersManagement\Bookings\Application\Search\BookingSearcherByUserTest.cs" containingFunctionPresentation="Method 'ShouldCallGetAllBookingsByUserId'">
             <startOffsets>
-              <option value="1189" />
+              <option value="1068" />
             </startOffsets>
             <endOffsets>
-              <option value="1228" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersTests/UsersManagement/Bookings/Application/Search/BookingSearcherByUserTest.cs</url>
-          <line>31</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersManagement\Bookings\Application\Search\BookingSearcherByUserTest.cs" containingFunctionPresentation="Method 'ShouldCallGetAllBookingsByUserId'">
-            <startOffsets>
-              <option value="1237" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1272" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersTests/UsersManagement/Bookings/Application/Search/BookingSearcherByUserTest.cs</url>
-          <line>34</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersManagement\Bookings\Application\Search\BookingSearcherByUserTest.cs" containingFunctionPresentation="Method 'ShouldCallGetAllBookingsByUserId'">
-            <startOffsets>
-              <option value="1344" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1390" />
+              <option value="1114" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
-          <line>96</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
-            <startOffsets>
-              <option value="3718" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3773" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
-          <line>98</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
-            <startOffsets>
-              <option value="3791" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3961" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="120" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
-          <line>104</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
-            <startOffsets>
-              <option value="3979" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4174" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="121" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
-          <line>110</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
-            <startOffsets>
-              <option value="4192" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4270" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="125" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
-          <line>111</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
-            <startOffsets>
-              <option value="4279" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4363" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
-          <line>121</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
-            <startOffsets>
-              <option value="4768" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4824" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="129" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Create/BookingCreator.cs</url>
-          <line>57</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Create\BookingCreator.cs" containingFunctionPresentation="Method 'Execute'">
-            <startOffsets>
-              <option value="2338" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2339" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
-          <line>118</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
-            <startOffsets>
-              <option value="4633" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4734" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
-          <line>114</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
-            <startOffsets>
-              <option value="4464" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4608" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="152" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Delete/BookingDeleterControllerTest.cs</url>
@@ -661,50 +578,656 @@
           <option name="timeStamp" value="154" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Delete/BookingDeleter.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Delete\BookingDeleter.cs" containingFunctionPresentation="Method 'Execute'">
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Create/BookingCreator.cs</url>
+          <line>49</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Create\BookingCreator.cs" containingFunctionPresentation="Method 'Execute'">
             <startOffsets>
-              <option value="824" />
+              <option value="1961" />
             </startOffsets>
             <endOffsets>
-              <option value="877" />
+              <option value="1999" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="155" />
+          <option name="timeStamp" value="207" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Delete/BookingDeleter.cs</url>
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Create/BookingCreator.cs</url>
+          <line>50</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Create\BookingCreator.cs" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="2010" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2067" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Create/BookingCreator.cs</url>
+          <line>51</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Create\BookingCreator.cs" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="2072" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2073" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Create/BookingCreator.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Create\BookingCreator.cs" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="1282" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1359" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Create/BookingCreator.cs</url>
+          <line>36</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Create\BookingCreator.cs" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="1438" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1522" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Create/BookingCreator.cs</url>
+          <line>40</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Create\BookingCreator.cs" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="1616" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1852" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Cancel/BookingCancellerController.cs</url>
           <line>24</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Delete\BookingDeleter.cs" containingFunctionPresentation="Method 'Execute'">
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Bookings\Cancel\BookingCancellerController.cs" containingFunctionPresentation="Method 'Cancel'">
             <startOffsets>
-              <option value="886" />
+              <option value="801" />
             </startOffsets>
             <endOffsets>
-              <option value="1128" />
+              <option value="859" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="156" />
+          <option name="timeStamp" value="219" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Delete/BookingDeleter.cs</url>
-          <line>31</line>
-          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Delete\BookingDeleter.cs" containingFunctionPresentation="Method 'Execute'">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Cancel/BookingCancellerController.cs</url>
+          <line>25</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Bookings\Cancel\BookingCancellerController.cs" containingFunctionPresentation="Method 'Cancel'">
             <startOffsets>
-              <option value="1166" />
+              <option value="872" />
             </startOffsets>
             <endOffsets>
-              <option value="1208" />
+              <option value="939" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="157" />
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Cancel/BookingCancellerController.cs</url>
+          <line>27</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Bookings\Cancel\BookingCancellerController.cs" containingFunctionPresentation="Method 'Cancel'">
+            <startOffsets>
+              <option value="953" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1010" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Cancel/BookingCanceller.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Cancel\BookingCanceller.cs" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="711" />
+            </startOffsets>
+            <endOffsets>
+              <option value="764" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Cancel/BookingCanceller.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Cancel\BookingCanceller.cs" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="773" />
+            </startOffsets>
+            <endOffsets>
+              <option value="793" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Cancel/BookingCanceller.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Cancel\BookingCanceller.cs" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="802" />
+            </startOffsets>
+            <endOffsets>
+              <option value="803" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="224" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Cancel/BookingCanceller.cs</url>
+          <line>24</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Cancel\BookingCanceller.cs" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="816" />
+            </startOffsets>
+            <endOffsets>
+              <option value="853" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Cancel/BookingCanceller.cs</url>
+          <line>26</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Cancel\BookingCanceller.cs" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="872" />
+            </startOffsets>
+            <endOffsets>
+              <option value="921" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="226" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
+          <line>98</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
+            <startOffsets>
+              <option value="3791" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3961" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
+          <line>104</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
+            <startOffsets>
+              <option value="3979" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4174" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
+          <line>111</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
+            <startOffsets>
+              <option value="4201" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4279" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
+          <line>112</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
+            <startOffsets>
+              <option value="4288" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4372" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
+          <line>115</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
+            <startOffsets>
+              <option value="4473" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4617" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
+          <line>116</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Lambda expression inside Method 'ShouldReturnCreated201'">
+            <startOffsets>
+              <option value="4515" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4575" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
+          <line>119</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
+            <startOffsets>
+              <option value="4642" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4743" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Create/BookingCreatorControllerTest.cs</url>
+          <line>122</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Create\BookingCreatorControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturnCreated201'">
+            <startOffsets>
+              <option value="4777" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4833" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Create/BookingCreatorController.cs</url>
+          <line>31</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Bookings\Create\BookingCreatorController.cs" containingFunctionPresentation="Method 'CeateBooking'">
+            <startOffsets>
+              <option value="1116" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1164" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Create/BookingCreatorController.cs</url>
+          <line>32</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Bookings\Create\BookingCreatorController.cs" containingFunctionPresentation="Method 'CeateBooking'">
+            <startOffsets>
+              <option value="1177" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1233" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Create/BookingCreatorController.cs</url>
+          <line>33</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Bookings\Create\BookingCreatorController.cs" containingFunctionPresentation="Method 'CeateBooking'">
+            <startOffsets>
+              <option value="1246" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1388" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="242" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Create/BookingCreatorController.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Bookings\Create\BookingCreatorController.cs" containingFunctionPresentation="Method 'CeateBooking'">
+            <startOffsets>
+              <option value="1401" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1467" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Create/BookingCreatorController.cs</url>
+          <line>36</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Bookings\Create\BookingCreatorController.cs" containingFunctionPresentation="Method 'CeateBooking'">
+            <startOffsets>
+              <option value="1498" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1532" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Create/BookingCreatorController.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Bookings\Create\BookingCreatorController.cs" containingFunctionPresentation="Method 'CeateBooking'">
+            <startOffsets>
+              <option value="1559" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1635" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Create/BookingCreatorController.cs</url>
+          <line>39</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Bookings\Create\BookingCreatorController.cs" containingFunctionPresentation="Method 'CeateBooking'">
+            <startOffsets>
+              <option value="1648" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1707" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Create/BookingCreatorController.cs</url>
+          <line>41</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Bookings\Create\BookingCreatorController.cs" containingFunctionPresentation="Method 'CeateBooking'">
+            <startOffsets>
+              <option value="1733" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1815" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Bookings/Create/BookingCreatorController.cs</url>
+          <line>42</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Bookings\Create\BookingCreatorController.cs" containingFunctionPresentation="Method 'CeateBooking'">
+            <startOffsets>
+              <option value="1828" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1896" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Shared/Users/Domain/Responses/UserResponse.cs</url>
+          <line>61</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Shared\Users\Domain\Responses\UserResponse.cs" containingFunctionPresentation="Method 'FromJson'">
+            <startOffsets>
+              <option value="1683" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1957" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Shared/Users/Domain/Responses/UserResponse.cs</url>
+          <line>67</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Shared\Users\Domain\Responses\UserResponse.cs" containingFunctionPresentation="Method 'FromJson'">
+            <startOffsets>
+              <option value="2028" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2067" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Shared/Users/Domain/Responses/UserResponse.cs</url>
+          <line>66</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Shared\Users\Domain\Responses\UserResponse.cs" containingFunctionPresentation="Method 'FromJson'">
+            <startOffsets>
+              <option value="1980" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2015" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Shared/Users/Domain/Responses/UserResponse.cs</url>
+          <line>68</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Shared\Users\Domain\Responses\UserResponse.cs" containingFunctionPresentation="Method 'FromJson'">
+            <startOffsets>
+              <option value="2080" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2121" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Shared/Users/Domain/Responses/UserResponse.cs</url>
+          <line>69</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Shared\Users\Domain\Responses\UserResponse.cs" containingFunctionPresentation="Method 'FromJson'">
+            <startOffsets>
+              <option value="2134" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2173" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Shared/Users/Domain/Responses/UserResponse.cs</url>
+          <line>71</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Shared\Users\Domain\Responses\UserResponse.cs" containingFunctionPresentation="Method 'FromJson'">
+            <startOffsets>
+              <option value="2187" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2224" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Cancel/BookingCancellerControllerTest.cs</url>
+          <line>49</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Cancel\BookingCancellerControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturn200Ok'">
+            <startOffsets>
+              <option value="1820" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1935" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Cancel/BookingCancellerControllerTest.cs</url>
+          <line>47</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Cancel\BookingCancellerControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturn200Ok'">
+            <startOffsets>
+              <option value="1671" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1795" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Bookings/Cancel/BookingCancellerControllerTest.cs</url>
+          <line>51</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Bookings\Cancel\BookingCancellerControllerTest.cs" containingFunctionPresentation="Method 'ShouldReturn200Ok'">
+            <startOffsets>
+              <option value="1960" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2011" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Find/BookingFinder.cs</url>
+          <line>16</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Find\BookingFinder.cs" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="478" />
+            </startOffsets>
+            <endOffsets>
+              <option value="542" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Find/BookingFinder.cs</url>
+          <line>17</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Find\BookingFinder.cs" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="551" />
+            </startOffsets>
+            <endOffsets>
+              <option value="571" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Bookings/Application/Find/BookingFinder.cs</url>
+          <line>19</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Bookings\Application\Find\BookingFinder.cs" containingFunctionPresentation="Method 'Execute'">
+            <startOffsets>
+              <option value="594" />
+            </startOffsets>
+            <endOffsets>
+              <option value="631" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="266" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersTests/UsersAPI/Controllers/Vehicles/Search/VehicleSearcherControllerTest.cs</url>
+          <line>13</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersTests\UsersAPI\Controllers\Vehicles\Search\VehicleSearcherControllerTest.cs" containingFunctionPresentation="Method 'SearchVehicles'">
+            <startOffsets>
+              <option value="300" />
+            </startOffsets>
+            <endOffsets>
+              <option value="383" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="267" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Vehicles/Search/VehicleSearcherController.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Vehicles\Search\VehicleSearcherController.cs" containingFunctionPresentation="Method 'SearchVehicles'">
+            <startOffsets>
+              <option value="650" />
+            </startOffsets>
+            <endOffsets>
+              <option value="651" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="268" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Vehicles/Search/VehicleSearcherController.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Vehicles\Search\VehicleSearcherController.cs" containingFunctionPresentation="Method 'SearchVehicles'">
+            <startOffsets>
+              <option value="659" />
+            </startOffsets>
+            <endOffsets>
+              <option value="730" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="269" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Vehicles/Search/VehicleSearcherController.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Vehicles\Search\VehicleSearcherController.cs" containingFunctionPresentation="Method 'SearchVehicles'">
+            <startOffsets>
+              <option value="738" />
+            </startOffsets>
+            <endOffsets>
+              <option value="932" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="270" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersAPI/Controllers/Vehicles/Search/VehicleSearcherController.cs</url>
+          <line>26</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersAPI\Controllers\Vehicles\Search\VehicleSearcherController.cs" containingFunctionPresentation="Method 'SearchVehicles'">
+            <startOffsets>
+              <option value="948" />
+            </startOffsets>
+            <endOffsets>
+              <option value="976" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="271" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Vehicles/Infrastructure/VehicleRepository.cs</url>
+          <line>48</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Vehicles\Infrastructure\VehicleRepository.cs" containingFunctionPresentation="Method 'Search'">
+            <startOffsets>
+              <option value="1489" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1595" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UsersManagement/Vehicles/Infrastructure/VehicleRepository.cs</url>
+          <line>49</line>
+          <properties documentPath="C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\Vehicles\Infrastructure\VehicleRepository.cs" containingFunctionPresentation="Method 'Search'">
+            <startOffsets>
+              <option value="1608" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1659" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="275" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <pin-to-top-manager>
-      <pinned-members>
-        <PinnedItemInfo parentTag="Type#UsersManagement.Bookings.Domain.Booking" memberName="UserResponse" />
-      </pinned-members>
-    </pin-to-top-manager>
   </component>
 </project>

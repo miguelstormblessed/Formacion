@@ -22,7 +22,7 @@ public class VehicleSearcherController : Controller
     {
        IEnumerable<Vehicle> vehicles =  await this._vehicleSearcher.Execute();
        List<VehicleResponseCtrl> vehicleResponses = 
-           vehicles.Select(v => new VehicleResponseCtrl(v.VehicleColor.ToString(), v.VehicleRegistration.RegistrationValue)).ToList();
+           vehicles.Select(v => new VehicleResponseCtrl(v.VehicleColor.ToString(), v.VehicleRegistration.RegistrationValue, v.Id.IdValue)).ToList();
        
        return Ok(vehicleResponses);
     }

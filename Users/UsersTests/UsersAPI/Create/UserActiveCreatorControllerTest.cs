@@ -7,8 +7,8 @@ using Newtonsoft.Json;
 using Users.Shared.Users.Domain.Requests;
 using Users.Shared.Vehicles.Domain.Responses;
 using Users.Users.Domain;
-using UsersTests.Shared.Vehicles.Domain.Responses;
-using UsersTests.Users.Domain;
+using UsersTests.Users.Shared.Vehicles.Domain.Responses;
+using UsersTests.Users.Users.Domain;
 
 namespace UsersTests.UsersAPI.Create;
 [Collection("Tests collection")]

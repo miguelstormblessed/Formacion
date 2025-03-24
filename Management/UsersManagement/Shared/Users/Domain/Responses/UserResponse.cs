@@ -52,12 +52,17 @@ public class UserResponse : IEquatable<UserResponse>
     
     public static UserResponse FromJson(string json)
     {
-        var jsonVehicle = JsonSerializer.Deserialize<JsonElement>(json/*, options*/);
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+    
+        var jsonVehicle = JsonSerializer.Deserialize<JsonElement>(json, options);
 
-        if (jsonVehicle.TryGetProperty("Id", out var idElement)
-            && jsonVehicle.TryGetProperty("Name", out var nameElement) 
-            && jsonVehicle.TryGetProperty("Email", out var emailElement)
-            && jsonVehicle.TryGetProperty("State", out var stateElement))
+        if (TryGetProperty(jsonVehicle,"Id", out var idElement)
+            && TryGetProperty(jsonVehicle,"Name", out var nameElement) 
+            && TryGetProperty(jsonVehicle,"Email", out var emailElement)
+            && TryGetProperty(jsonVehicle,"State", out var stateElement))
         {
             string? id = idElement.GetString();
             string? name = nameElement.GetString();
@@ -68,5 +73,28 @@ public class UserResponse : IEquatable<UserResponse>
         }
 
         return null;
+    }
+    
+    private static bool TryGetProperty(JsonElement element, string propertyName, out JsonElement value)
+    {
+        // Intentar obtener la propiedad directamente (usando la configuración insensible a mayúsculas/minúsculas)
+        if (element.TryGetProperty(propertyName, out value))
+        {
+            return true;
+        }
+
+        // Si no se encuentra, buscar en todas las propiedades de forma manual
+        foreach (var property in element.EnumerateObject())
+        {
+            if (string.Equals(property.Name, propertyName, StringComparison.OrdinalIgnoreCase))
+            {
+                value = property.Value;
+                return true;
+            }
+        }
+
+        // No se encontró la propiedad
+        value = default;
+        return false;
     }
 }

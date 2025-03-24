@@ -46,7 +46,7 @@ public class VehicleRepository : IVehicleRepository
     {
         using (var connection = new MySqlConnection(_connection.ConnectionString))
         {
-            string query = "SELECT id as VehicleId, color as VehicleColor, registration as VehicleRegistration  FROM vehicle";
+            string query = "SELECT id as Id, color as VehicleColor, registration as VehicleRegistration FROM vehicle";
             return await connection.QueryAsync<Vehicle>(query);
         }
         

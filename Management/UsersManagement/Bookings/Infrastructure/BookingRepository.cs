@@ -138,4 +138,14 @@ public class BookingRepository : IBookingRepository
             connection.Execute(query, new {Id = bookingId.IdValue});
         }
     }
+
+    public void Patch(BookingStatus bookingStatus, BookingId bookingId)
+    {
+        using (var connection = new MySqlConnection(_connection.ConnectionString))
+        {
+            connection.Open();
+            string query = "UPDATE booking SET status = @Status WHERE id = @Id";    
+            connection.Execute(query, new{Status = bookingStatus.StatusValue, Id = bookingId.IdValue});
+        }
+    }
 }

@@ -936,6 +936,7 @@ C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\bin\Debug\n
 C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\bin\Debug\net8.0\refs\System.Xml.XPath.dll
 C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\bin\Debug\net8.0\refs\System.Xml.XPath.XDocument.dll
 C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\bin\Debug\net8.0\refs\WindowsBase.dll
+C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\bin\Debug\net8.0\Users.dll
 C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\obj\Debug\net8.0\UsersManagement.csproj.AssemblyReference.cache
 C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\obj\Debug\net8.0\MvcTestingAppManifest.json
 C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\obj\Debug\net8.0\UsersManagement.GeneratedMSBuildEditorConfig.editorconfig
@@ -943,6 +944,7 @@ C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\obj\Debug\n
 C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\obj\Debug\net8.0\UsersManagement.AssemblyInfo.cs
 C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\obj\Debug\net8.0\UsersManagement.csproj.CoreCompileInputs.cache
 C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\obj\Debug\net8.0\UsersManagement.sourcelink.json
+C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\obj\Debug\net8.0\UsersMan.951B1457.Up2Date
 C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\obj\Debug\net8.0\UsersManagement.dll
 C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\obj\Debug\net8.0\refint\UsersManagement.dll
 C:\Users\miguel.picazo\Desktop\Formación\Management\UsersManagement\obj\Debug\net8.0\UsersManagement.pdb
